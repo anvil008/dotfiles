@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 ##Cask Installs##
 
 #Dependencies
@@ -15,7 +14,8 @@ brew cask install raindropio
 brew cask install atom
 brew cask install github-desktop
 brew cask install tower
-brew cask install intellij-idea
+brew cask install jetbrains-toolbox
+brew cask install transmit
 #Designer
 brew cask install adobe-creative-cloud
 #Productivity
@@ -42,3 +42,6 @@ brew cask install tunnelbear
 brew cask install parallels-desktop
 brew cask install malwarebytes-anti-malware
 brew cask install backblaze
+brew cask install bartender
+brew cask install istat-menu
+brew cask install macdropany
