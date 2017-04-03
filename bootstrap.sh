@@ -11,7 +11,7 @@ function doIt() {
 				--exclude "bootstrap.sh" \
 				--exclude "brew.sh" \
 				--exclude "brewcash.sh" \
-				--exclude "chocolatelyinstall.cmd"
+				--exclude "chocolatelyinstall.cmd" \
 				--exclude "LICENSE-MIT.txt" \
 				--exclude "README.md" \
 				-avh --no-perms . ~;
