@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+#2016 binaries
+brew install ruby
+brew install python
+brew install python3
+brew install node
+brew install fish
+brew install zsh
+
 # Install command-line tools using Homebrew.
 
 # Make sure we’re using the latest Homebrew.
@@ -41,7 +49,7 @@ brew install ringojs
 brew install narwhal
 
 # Install more recent versions of some macOS tools.
-# brew install vim --override-system-vi
+brew install vim --with-override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
@@ -101,13 +109,7 @@ brew install vbindiff
 brew install webkit2png
 brew install zopfli
 
-#2016 binaries
-brew install ruby
-brew install python
-brew install python3
-brew install git
-brew install node
-brew install fish
+
 
 # Remove outdated versions from the cellar.
 brew cleanup

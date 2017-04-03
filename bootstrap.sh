@@ -9,11 +9,11 @@ function doIt() {
 				--exclude ".DS_Store" \
 				--exclude ".osx" \
 				--exclude "bootstrap.sh" \
-				--exclude "README.md" \
-				--exclude "LICENSE-MIT.txt" \
 				--exclude "brew.sh" \
 				--exclude "brewcash.sh" \
-				--exclude "chocolatelyinstall.cmd" \
+				--exclude "chocolatelyinstall.cmd"
+				--exclude "LICENSE-MIT.txt" \
+				--exclude "README.md" \
 				-avh --no-perms . ~;
 			source ~/.bash_profile;
 }
