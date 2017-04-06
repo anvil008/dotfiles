@@ -109,7 +109,5 @@ brew install vbindiff
 brew install webkit2png
 brew install zopfli
 
-
-
 # Remove outdated versions from the cellar.
 brew cleanup

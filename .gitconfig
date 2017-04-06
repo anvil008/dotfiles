@@ -183,3 +183,7 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+	name = Anvil Palamattam
+	email = anvil008@me.com
