@@ -7,7 +7,6 @@ It is primarily based of Mathias's dotfiles, however with updated features such 
 
 
 ## Installation
----
 
 Change the symbolic links to your personal Dropbox folder or Github folder in the `setup.sh` file.
 
@@ -19,9 +18,7 @@ to
 To run the setup file.  
 `source setup.sh`
 
-
 ## Personalization
----
 
 The `setup.sh` file should show what it does in the comments.
 A bit of personalization is required for certain matters such as the automatic installation from the Mac App Store, as it would only install apps that the person owns only.
