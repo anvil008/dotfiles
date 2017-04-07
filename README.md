@@ -1,2 +1,3 @@
-# dotfiles
-A collection of personal synced dotfiles
+# Dotfiles
+
+##A collection of personal synced dotfiles

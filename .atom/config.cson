@@ -1,0 +1,28 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "9d79d86b-0173-4c3c-a1aa-db3fc0d868ac"
+  core:
+    allowPendingPaneItems: false
+    disabledPackages: [
+      "autocomplete-ruby"
+    ]
+    telemetryConsent: "no"
+    useCustomTitleBar: true
+  editor:
+    fontFamily: "Hack"
+    fontSize: 12
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrapAtPreferredLineLength: true
+  "line-ending-selector":
+    defaultLineEnding: "LF"
+  "linter-ui-default":
+    showPanel: true
+  "one-dark-ui": {}
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  welcome:
+    showOnStartup: false
