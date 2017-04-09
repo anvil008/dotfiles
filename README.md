@@ -34,4 +34,4 @@ Therefore change the brew mas installations in the `Brewfile`.
 Manually specifying the homebrew cask apps is self-explanatory.
 
 ### Atom packages
-The atom package-sync package should keep atom packages synced and updated (not in real-time, have to manually run the sync command) These packages are found in the `.atom/packages.cson`
+The atom package-sync package should keep atom packages synced and updated (not in real-time, have to manually run the sync command) These packages are found in the `.atom/packages.cson`.
