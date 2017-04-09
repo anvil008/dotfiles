@@ -35,3 +35,16 @@ Manually specifying the homebrew cask apps is self-explanatory.
 
 ### Atom packages
 The atom package-sync package should keep atom packages synced and updated (not in real-time, have to manually run the sync command) These packages are found in the `.atom/packages.cson`.
+
+## Maintainers
+
+[@anvil008](https://github.com/anvil008)
+
+## Contribute
+
+Feel free to dive in! [Open an issue](https://github.com/anvil008/dotfiles/issues/new) or submit PRs.  
+Tokémon follows the [Contributor Covenant](http://contributor-covenant.org/version/1/4/) Code of Conduct.
+
+## License
+
+[MIT](LICENSE) © Anvil Palamattam
