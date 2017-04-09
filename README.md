@@ -1,22 +1,26 @@
 # Anvil's Dotfiles
 
-This is my personal collection of dotfiles which is based around bash.
-It uses symbolic links to link the files from the dotfiles folder to your home folder. Personally I keep the dotfiles in my Dropbox and symlink it from there, so it's updated across multiple devices in real-time. However it works even from your Github folder. (Just need to change the symbolic link to your Github folder instead of Dropbox)
+This is my personal collection of dotfiles which is primarily based around bash.
+It uses symbolic links to link the files from the dotfiles folder to your home folder. Personally I keep the dotfiles in my Dropbox and symlink it from there, so it's updated across multiple devices in real-time. However it works even from your Github folder.
 
-It is primarily based of Mathias's dotfiles, however with updated features such a Brewfile instead of brew.sh, a hyper.js setup, and symlinking the dotfiles and also include a chocolately and just-install script for Windows users.
-
+It is based of Mathias's dotfiles, however with updated features such a Brewfile instead of brew.sh, a hyper.js setup, and symlinking the dotfiles and also include a chocolately and just-install script for Windows users.
 
 ## Installation
 
 Change the symbolic links to your personal Dropbox folder or Github folder in the `setup.sh` file.
 
 For example to   
-`ln -sf ~/Dropbox/Developer/dotfiles/.aliases ~`  
-to  
-`ln -sf ~/Github/dotfiles/.aliases ~`  
-
+```bash
+ln -sf ~/Dropbox/Developer/dotfiles/.aliases ~
+```
+to
+```bash
+`ln -sf ~/Github/dotfiles/.aliases ~`
+```
 To run the setup file.  
-`source setup.sh`
+```bash
+source setup.sh
+```
 
 ## Personalization
 
