@@ -43,7 +43,7 @@ The atom package-sync package should keep atom packages synced and updated (not 
 ## Contribute
 
 Feel free to dive in! [Open an issue](https://github.com/anvil008/dotfiles/issues/new) or submit PRs.  
-Tokémon follows the [Contributor Covenant](http://contributor-covenant.org/version/1/4/) Code of Conduct.
+Dotfiles follows the [Contributor Covenant](http://contributor-covenant.org/version/1/4/) Code of Conduct.
 
 ## License
 
