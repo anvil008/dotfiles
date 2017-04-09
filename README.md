@@ -9,26 +9,26 @@ It is based of Mathias's dotfiles, however with updated features such a Brewfile
 
 Change the symbolic links to your personal Dropbox folder or Github folder in the `setup.sh` file.
 
-For example to   
+For example to move from the default Dropbox to Github folder. Change the following line
 ```bash
 ln -sf ~/Dropbox/Developer/dotfiles/.aliases ~
 ```
-to
+to 
 ```bash
-`ln -sf ~/Github/dotfiles/.aliases ~`
+ln -sf ~/Github/dotfiles/.aliases ~
 ```
-To run the setup file.  
+To run the setup file
 ```bash
 source setup.sh
 ```
 
 ## Personalization
 
-The `setup.sh` file should show what it does in the comments.
-A bit of personalization is required for certain matters such as the automatic installation from the Mac App Store, as it would only install apps that the person owns only.
+The `setup.sh` file should describe primarily what it does in the comments.
+A bit of personalization is required for certain matters such as the automatic installation from the Mac App Store, as it would only install apps that the user owns only.
 
 ### Mac App Store
-Therefore change the brew mas installation in the `Brewfile`.
+Therefore change the brew mas installations in the `Brewfile`.
 
 ### Homebrew Cask Packages
 Manually specifying the homebrew cask apps is self-explanatory.
