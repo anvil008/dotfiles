@@ -12,21 +12,21 @@ if test ! $(which brew); then
 fi
 
 # Update Homebrew recipes
-brew update
-brew upgrade
+# brew update
+# brew upgrade
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
-brew bundle
+# brew tap homebrew/bundle
+# brew bundle
 
 # Make ZSH the default shell environment
 # chsh -s $(which zsh)
 
 # Install global NPM packages
-sudo npm install --global yarn
+# sudo npm install --global yarn
 
 # Install Atom's package manager sync
-apm install package-sync
+# apm install package-sync
 
 #Symbolic link dotfiles  to ~/
 ln -sf ~/Github/dotfiles/.atom/config.cson ~/.atom/
@@ -57,4 +57,4 @@ ln -sf ~/Dropbox/Developer/dotfiles/.private ~
 source ~/.bash_profile;
 
 # Set macOS preferences
-source .macos
+# source .macos

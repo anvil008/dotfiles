@@ -16,6 +16,8 @@
     showIndentGuide: true
     showInvisibles: true
     softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "582938fb-a7d6-4690-93da-6e2f17aca978"
   "line-ending-selector":
     defaultLineEnding: "LF"
   "linter-ui-default":
