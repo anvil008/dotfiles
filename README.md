@@ -7,15 +7,14 @@ It is based of Mathias's dotfiles, however with updated features such a Brewfile
 
 ## Installation
 
-Change the symbolic links to your personal Dropbox folder or Github folder in the `setup.sh` file.
+Change the symbolic link to link your .private file in `setup.sh` file.
 
-For example to move from the default Dropbox to Github folder. Change the following line :
 ```bash
-ln -sf ~/Dropbox/Developer/dotfiles/.aliases ~
+ln -sf ~/Dropbox/Developer/dotfiles/.private ~
 ```
-to 
+to
 ```bash
-ln -sf ~/Github/dotfiles/.aliases ~
+ln -sf ~/User/dotfiles/.private ~
 ```
 To run the setup file
 ```bash

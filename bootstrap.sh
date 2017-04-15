@@ -24,6 +24,7 @@ function doIt() {
 	ln -s ~/Github/dotfiles/.path ~
 	ln -s ~/Github/dotfiles/.screenrc ~
 	ln -s ~/Github/dotfiles/.wgetrc ~
+	ln -s ~/Dropbox/dotfiles/.private ~
 	source ~/.bash_profile;
 }
 
