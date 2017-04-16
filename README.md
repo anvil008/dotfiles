@@ -1,5 +1,7 @@
 # Anvil's Dotfiles
 
+![Screenshot of terminal](/screenshot/screenshot.png?raw=true "Screenshot of Terminal")
+
 This is my personal collection of dotfiles which is primarily based around zsh, hyper.js, brewfile, chocolately(for Windows users). It uses symbolic links to link the files from the dotfiles folder to your home folder.
 
 There is an older bash folder with bash dotfiles which is based of Mathias's dotfiles. The zsh mostly uses the oh-my-zsh framework.
