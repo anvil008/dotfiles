@@ -1,6 +1,6 @@
 # Anvil's Dotfiles
 
-![Screenshot of terminal](/screenshot/screenshot.png?raw=true "Screenshot of Terminal")
+<img src="/screenshot/screenshot.png" width="1153">
 
 This is my personal collection of dotfiles which is primarily based around zsh, hyper.js, brewfile, chocolately(for Windows users). It uses symbolic links to link the files from the dotfiles folder to your home folder.
 
@@ -43,7 +43,7 @@ The atom package-sync package should keep atom packages synced and updated (not 
 ## Contribute
 
 Feel free to dive in! [Open an issue](https://github.com/anvil008/dotfiles/issues/new) or submit PRs.  
-Dotfiles follows the [Contributor Covenant](http://contributor-covenant.org/version/1/4/) Code of Conduct.
+Dotfiles follows the [Contributor Code of Conduct](code-of-conduct.md).  By participating in this project you agree to abide by its terms.
 
 ## License
 
