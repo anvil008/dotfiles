@@ -46,7 +46,6 @@ brew 'git-lfs'
 brew 'lua'
 brew 'p7zip'
 brew 'rename'
-brew 'speedtest_cli'
 brew 'testssl'
 brew 'vbindiff'
 brew 'zopfli'
@@ -56,7 +55,6 @@ brew 'rhino'
 # Development
 brew 'php71', args: ['with-debug']
 brew 'php71-intl'
-brew 'mariadb'
 
 # Apps
 cask 'google-chrome'

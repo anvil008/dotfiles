@@ -1,36 +1,35 @@
 # Anvil's Dotfiles
 
-This is my personal collection of dotfiles which is primarily based around bash.
-It uses symbolic links to link the files from the dotfiles folder to your home folder. Personally I keep the dotfiles in my Dropbox and symlink it from there, so it's updated across multiple devices in real-time. However it works even from your Github folder.
+This is my personal collection of dotfiles which is primarily based around zsh, hyper.js, brewfile, chocolately(for Windows users). It uses symbolic links to link the files from the dotfiles folder to your home folder.
 
-It is based of Mathias's dotfiles, however with updated features such a Brewfile instead of brew.sh, a hyper.js setup, and symlinking the dotfiles and also include a chocolately and just-install script for Windows users.
+There is an older bash folder with bash dotfiles which is based of Mathias's dotfiles. The zsh mostly uses the oh-my-zsh framework.
 
 ## Installation
 
 Change the symbolic link to link your .private file in `setup.sh` file.
 
-```bash
+```shell
 ln -sf ~/Dropbox/Developer/dotfiles/.private ~
 ```
 to
-```bash
+```shell
 ln -sf ~/User/dotfiles/.private ~
 ```
 To run the setup file
-```bash
-source setup.sh
+```shell
+source macsetup.sh
+source linksetup.sh
 ```
 
 ### Personalization
 
-The `setup.sh` file should describe primarily what it does in the comments.
-A bit of personalization is required for certain matters such as the automatic installation from the Mac App Store, as it would only install apps that the user owns only.
+The `linksetup.sh` and `macsetup.sh` file should describe primarily what it does in the comments. A bit of personalization is required for certain matters such as the automatic installation from the Mac App Store, as it would only install apps that the user owns only.
 
 #### Mac App Store
 Therefore change the brew mas installations in the `Brewfile`.
 
 #### Homebrew Cask Packages
-Manually specifying the homebrew cask apps is self-explanatory.
+Manually specifying the homebrew cask apps required is self-explanatory.
 
 #### Atom packages
 The atom package-sync package should keep atom packages synced and updated (not in real-time, have to manually run the sync command) These packages are found in the `.atom/packages.cson`.
