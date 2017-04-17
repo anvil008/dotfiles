@@ -62,7 +62,7 @@ ln -sf ~/Dropbox/Developer/private.zsh ~/.oh-my-zsh/custom/
 # ln -sf "$PWD/.bashrc" ~
 # source ~/.bash_profile;
 
-Set macOS defaults
+#Set macOS defaults
 source "$PWD/macos/macos.sh"
 
 echo "Your Mac has been setup $USER"
