@@ -28,7 +28,7 @@ source "$PWD/packages/yarn.sh"
 # Install Atom packages
 source "$PWD/packages/apm.sh"
 
-Symbolic link primary dotfiles to ~/
+#Symbolic link primary dotfiles to ~/
 ln -sf "$PWD/.atom/config.cson" ~/.atom/
 ln -sf "$PWD/.atom/init.coffee" ~/.atom/
 ln -sf "$PWD/.atom/keymap.cson" ~/.atom/
