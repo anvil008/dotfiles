@@ -36,6 +36,7 @@ ln -sf "$PWD/.atom/snippets.cson" ~/.atom/
 ln -sf "$PWD/.atom/styles.less" ~/.atom/
 ln -sf "$PWD/git/.gitconfig" ~
 ln -sf "$PWD/git/.gitignore_global" ~
+ln -sf "$PWD/git/.gitattributes" ~
 ln -sf "$PWD/hyper/.hyper.js" ~
 ln -sf "$PWD/shell/.curlrc" ~
 ln -sf "$PWD/shell/.editorconfig" ~
@@ -51,6 +52,8 @@ ln -sf "$PWD/shell/functions.zsh" ~/.oh-my-zsh/custom/
 ln -sf "$PWD/shell/path.zsh" ~/.oh-my-zsh/custom/
 ln -sf "$PWD/shell/zsh-plugins/zsh-autosuggestions" ~/.oh-my-zsh/custom/plugins
 ln -sf "$PWD/shell/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/plugins
+ln -sf "$PWD/themes/zsh-prompts/pure/pure.zsh" ~/.oh-my-zsh/custom/pure.zsh-theme
+ln -sf "$PWD/themes/zsh-prompts/pure/async.zsh" ~/.oh-my-zsh/custom/async.zsh
 ln -sf ~/Dropbox/Developer/private.zsh ~/.oh-my-zsh/custom/
 
 #Symbolic link bash dotfiles to ~/ ~
