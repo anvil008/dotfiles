@@ -1,7 +1,7 @@
 # Anvil's Dotfiles
 
 <p align="center">
-  <img src="/screenshot/screenshot.png">
+  <img src="/screenshot.png">
 </p>
 
 This is my personal collection of dotfiles which is primarily based around zsh, hyper.js, brewfile, chocolately(for Windows users). It uses symbolic links to link the files from the dotfiles folder to your home folder.
@@ -10,16 +10,17 @@ There is an older bash folder with bash dotfiles which is based of Mathias's dot
 
 ## Installation
 
-Change the symbolic link to link your .private file in `setup.sh` file.
+Clone the repository.
+```shell
+git clone https://github.com/anvil008/dotfiles.git
+```
+
+Change the following symbolic link to link your personal private.zsh file in `link_setup.sh` file.
 
 ```shell
 ln -sf ~/Dropbox/Developer/dotfiles/.private ~
 ```
-to
-```shell
-ln -sf ~/User/dotfiles/.private ~
-```
-To run the setup file
+To run the setup file.
 ```shell
 source macsetup.sh
 source linksetup.sh
@@ -27,7 +28,7 @@ source linksetup.sh
 
 ### Personalization
 
-The `linksetup.sh` and `macsetup.sh` file should describe primarily what it does in the comments. A bit of personalization is required for certain matters such as the automatic installation from the Mac App Store, as it would only install apps that the user owns only.
+The `setup.sh` file should describe primarily what it does in the comments. A bit of personalization is required for certain matters such as the automatic installation from the Mac App Store, as it would only install apps that the user owns only.
 
 #### Mac App Store
 Therefore change the brew mas installations in the `Brewfile`.
