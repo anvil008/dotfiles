@@ -28,7 +28,7 @@ source setup.sh
 ### Personalization
 
 #### Mac App Store
-Mac apps to be installed can be set in `Brewfile`.  
+Mac apps to be installed can be set in `macos/Brewfile`.  
 (Note : it will only install apps that the user owns only.)
 
 #### Homebrew Packages
