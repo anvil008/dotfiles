@@ -18,7 +18,7 @@ git clone https://github.com/anvil008/dotfiles.git
 Change the following symbolic link to link your personal private.zsh file (containing private keys) in `setup.sh` file.
 
 ```shell
-ln -sf ~/Dropbox/Developer/dotfiles/.private ~
+ln -sf ~/Dropbox/Developer/dotfiles/.private
 ```
 To run the setup file.
 ```shell
