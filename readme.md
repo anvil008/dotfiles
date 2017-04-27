@@ -4,6 +4,8 @@
   <img src="/screenshot.png">
 </p>
 
+## Background
+
 This is my set of dotfiles which is primarily based around zsh, hyper.js, brewfile, chocolately (for Windows users). It uses symbolic links to link the files from the dotfiles folder to your home folder.
 
 Bash dotfiles are included based of Mathias's dotfiles (currently not in use). The zsh dotfiles uses the oh-my-zsh framework with custom dotfiles in the custom folder.
