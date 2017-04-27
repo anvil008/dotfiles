@@ -53,4 +53,4 @@ By participating in this project you agree to abide by its terms.
 
 ## License
 
-[MIT](LICENSE) © Anvil Palamattam
+[MIT](license.md) © Anvil Palamattam
