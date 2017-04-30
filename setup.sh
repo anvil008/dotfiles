@@ -29,11 +29,11 @@ source "$PWD/packages/yarn.sh"
 source "$PWD/packages/apm.sh"
 
 #Symbolic link primary dotfiles to ~/
-ln -sf "$PWD/.atom/config.cson" ~/.atom/
-ln -sf "$PWD/.atom/init.coffee" ~/.atom/
-ln -sf "$PWD/.atom/keymap.cson" ~/.atom/
-ln -sf "$PWD/.atom/snippets.cson" ~/.atom/
-ln -sf "$PWD/.atom/styles.less" ~/.atom/
+ln -sf "$PWD/atom/config.cson" ~/.atom/
+ln -sf "$PWD/atom/init.coffee" ~/.atom/
+ln -sf "$PWD/atom/keymap.cson" ~/.atom/
+ln -sf "$PWD/atom/snippets.cson" ~/.atom/
+ln -sf "$PWD/atom/styles.less" ~/.atom/
 ln -sf "$PWD/git/.gitconfig" ~
 ln -sf "$PWD/git/.gitignore_global" ~
 ln -sf "$PWD/git/.gitattributes" ~
