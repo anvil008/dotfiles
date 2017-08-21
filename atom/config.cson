@@ -8,7 +8,7 @@
       "autocomplete-ruby"
     ]
     telemetryConsent: "no"
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
     fontFamily: "Hack"
     fontSize: 12
