@@ -15,8 +15,9 @@ brew upgrade
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-cd macos
+cd os/mac
 brew bundle
+cd ..
 cd ..
 
 # Make ZSH the default shell environment
@@ -28,42 +29,52 @@ source "$PWD/packages/yarn.sh"
 # Install Atom packages
 source "$PWD/packages/apm.sh"
 
-#Symbolic link primary dotfiles to ~/
+#Symbolic link atom dotfiles to ~/
 ln -sf "$PWD/atom/config.cson" ~/.atom/
 ln -sf "$PWD/atom/init.coffee" ~/.atom/
 ln -sf "$PWD/atom/keymap.cson" ~/.atom/
 ln -sf "$PWD/atom/packages.cson" ~/.atom/
 ln -sf "$PWD/atom/snippets.cson" ~/.atom/
 ln -sf "$PWD/atom/styles.less" ~/.atom/
+
+#Symbolic link git dotfiles to ~/
 ln -sf "$PWD/git/.gitattributes" ~
 ln -sf "$PWD/git/.gitconfig" ~
 ln -sf "$PWD/git/.gitignore_global" ~
+
+#Symbolic link hyper dotfiles to ~/
 ln -sf "$PWD/hyper/.hyper.js" ~
+
+#Symbolic link zsh dotfiles to ~/
+ln -sf "$PWD/shell/zsh/.zshrc" ~
+ln -sf "$PWD/shell/zsh/aliases.zsh" ~/.oh-my-zsh/custom/
+ln -sf "$PWD/shell/zsh/exports.zsh" ~/.oh-my-zsh/custom/
+ln -sf "$PWD/shell/zsh/functions.zsh" ~/.oh-my-zsh/custom/
+ln -sf "$PWD/shell/zsh/path.zsh" ~/.oh-my-zsh/custom/
+ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-autosuggestions" ~/.oh-my-zsh/custom/plugins
+ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/plugins
+
+#Symbolic link other dotfiles to ~/
 ln -sf "$PWD/shell/.curlrc" ~
 ln -sf "$PWD/shell/.editorconfig" ~
 ln -sf "$PWD/shell/.hushlogin" ~
 ln -sf "$PWD/shell/.inputrc" ~
 ln -sf "$PWD/shell/.wgetrc" ~
 
-#Symbolic link zsh dotfiles to ~/
-ln -sf "$PWD/shell/.zshrc" ~
-ln -sf "$PWD/shell/aliases.zsh" ~/.oh-my-zsh/custom/
-ln -sf "$PWD/shell/exports.zsh" ~/.oh-my-zsh/custom/
-ln -sf "$PWD/shell/functions.zsh" ~/.oh-my-zsh/custom/
-ln -sf "$PWD/shell/path.zsh" ~/.oh-my-zsh/custom/
-ln -sf "$PWD/shell/zsh-plugins/zsh-autosuggestions" ~/.oh-my-zsh/custom/plugins
-ln -sf "$PWD/shell/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/plugins
+#Symbolic link theme dotfiles to ~/
 ln -sf "$PWD/themes/zsh-prompts/pure/async.zsh" ~/.oh-my-zsh/custom/async.zsh
 ln -sf "$PWD/themes/zsh-prompts/pure/pure.zsh" ~/.oh-my-zsh/custom/pure.zsh-theme
+
+#Symbolic link private dotfiles to ~/
 ln -sf ~/Dropbox/Developer/private.zsh ~/.oh-my-zsh/custom/
 
 #Symbolic link bash dotfiles to ~/ ~
-# ln -sf "$PWD/.bash_profile" ~
-# ln -sf "$PWD/.bash_prompt" ~
-# ln -sf "$PWD/.bashrc" ~
-# source ~/.bash_profile;
+# ln -sf "$PWD/shell/bash/.bash_profile" ~
+# ln -sf "$PWD/shell/bash/.bash_prompt" ~
+# ln -sf "$PWD/shell/bash/.bashrc" ~
+# source "$PWD/shell/bash/.bash_profile"
 
 #Set macOS defaults
-source "$PWD/macos/macos.sh"
+source "$PWD/os/mac/macos.sh"
 
 echo "Your Mac has been setup $USER"
