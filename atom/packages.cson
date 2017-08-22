@@ -1,5 +1,6 @@
 packages: [
   "atom-beautify"
+  "autocomplete-plus"
   "autocomplete-ruby"
   "busy-signal"
   "editorconfig"
@@ -8,7 +9,12 @@ packages: [
   "linter"
   "linter-ruby"
   "linter-ui-default"
+  "minimap"
   "package-sync"
+  "pigments"
   "platformio-ide-terminal"
+  "sort-lines"
+  "sorter"
   "split-diff"
+  "wakatime"
 ]
