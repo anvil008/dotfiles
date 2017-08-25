@@ -26,7 +26,7 @@ chsh -s $(which zsh)
 # Install global npm/yarn packages
 source "$PWD/packages/yarn.sh"
 
-# Install Atom packages
+# Install atom packages
 source "$PWD/packages/apm.sh"
 
 #Symbolic link atom dotfiles to ~/
