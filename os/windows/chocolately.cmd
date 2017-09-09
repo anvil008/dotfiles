@@ -39,7 +39,8 @@ cinst latencymon -y
 cinst hwinfo -y
 cinst cpu-z -y
 cinst gpu-z -y
-cinst ddu -y
+cinst crystaldiskmark -y
+cinst crystaldiskinfo -y
 
 # Developer
 cinst atom -y
