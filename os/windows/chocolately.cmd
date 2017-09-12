@@ -9,14 +9,13 @@ cinst steam -y
 cinst battle.net -y
 cinst origin -y
 cinst uplay -y
+cinst goggalaxy -y
 cinst gamesavemanager -y
 cinst obs-studio -y
 cinst geforce-experience -y
 
-# Web
+# Web & Comms
 cinst googlechrome -y
-
-# Comms
 cinst discord -y
 cinst skype -y
 cinst whatsapp -y
@@ -28,19 +27,25 @@ cinst sharex -y
 cinst filebot -y
 cinst plexmediaserver -y
 cinst potplayer -y
+cinst foobar2000 -y
 
 # Utilities
 cinst qbittorrent -y
-cinst processhacker -y
-cinst speccy -y
 cinst teamviewer -y
 cinst rainmeter -y
-cinst latencymon -y
+cinst ccleaner -y
+cinst handbrake -y
+
+#Hardware and Monitoring
+cinst processhacker -y
+cinst speccy -y
 cinst hwinfo -y
+cinst hwmonitor -y
 cinst cpu-z -y
 cinst gpu-z -y
-cinst crystaldiskmark -y
 cinst crystaldiskinfo -y
+cinst crystaldiskmark -y
+cinst latencymon -y
 
 # Developer
 cinst atom -y
@@ -58,7 +63,6 @@ cinst adobeair -y
 # Currently Not Using
 # cinst malwarebytes
 # cinst hostsman
-# cinst goggalaxy
 # cinst f.lux
 # cinst autohotkey.install
 # cinst windirstat
