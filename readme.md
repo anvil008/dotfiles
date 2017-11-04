@@ -22,10 +22,13 @@ Change the following symbolic link to link your personal private.zsh file (conta
 ```shell
 ln -sf ~/Dropbox/Developer/dotfiles/.private
 ```
+
 To run the setup file.
 ```shell
 source setup.sh
 ```
+
+Use the theme Snazzy.terminal from the themes/terminal-snazzy folder.
 
 ### Personalization
 
@@ -34,7 +37,7 @@ Mac apps to be installed can be set in `macos/Brewfile`.
 (Note : it will only install apps that the user owns only.)
 
 #### Homebrew Packages
-Brew packages and cask packages can be set in `packages/apm.sh`.
+Brew packages and cask packages can be set in `macos/Brewfile`.
 
 #### Atom packages
 Atom packages can be set in `atom/packages.cson`.  

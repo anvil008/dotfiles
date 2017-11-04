@@ -20,6 +20,7 @@ packages=(
     fast-cli
     speed-test
     public-ip
+		pure-prompt
 )
 
 yarn global add "${packages[@]}"

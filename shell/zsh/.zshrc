@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Anvil/.oh-my-zsh
+export PATH=/usr/local/sbin:$PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -97,3 +98,5 @@ setopt EXTENDED_HISTORY     # Add timestamp to history
 #Pure Theme
 autoload -U promptinit; promptinit
 prompt pure
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
