@@ -20,6 +20,8 @@ brew bundle
 cd ..
 cd ..
 
+brew cleanup
+
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
 
@@ -45,18 +47,19 @@ ln -sf "$PWD/shell/zsh/functions.zsh" ~/.oh-my-zsh/custom/
 ln -sf "$PWD/shell/zsh/path.zsh" ~/.oh-my-zsh/custom/
 ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-autosuggestions" ~/.oh-my-zsh/custom/plugins
 ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/plugins
-# ln -sf "$PWD/shell/.curlrc" ~
 ln -sf "$PWD/shell/.editorconfig" ~
 ln -sf "$PWD/shell/.hushlogin" ~
+# ln -sf "$PWD/shell/.curlrc" ~
 # ln -sf "$PWD/shell/.inputrc" ~
 # ln -sf "$PWD/shell/.wgetrc" ~
 # ln -sf "$PWD/shell/bash/.bash_profile" ~
 # ln -sf "$PWD/shell/bash/.bash_prompt" ~
 # ln -sf "$PWD/shell/bash/.bashrc" ~
 # source "$PWD/shell/bash/.bash_profile"
-# ln -sf "$PWD/themes/zsh-prompts/pure/async.zsh" ~/.oh-my-zsh/custom/async.zsh
-# ln -sf "$PWD/themes/zsh-prompts/pure/pure.zsh" ~/.oh-my-zsh/custom/pure.zsh-theme
 ln -sf ~/Dropbox/Developer/private.zsh ~/.oh-my-zsh/custom/
+
+# Updates macOS and all packages
+apm update && yarn global upgrade && apm update && gem update && softwareupdate -lia
 
 #Set macOS defaults
 source "$PWD/os/mac/macos.sh"
