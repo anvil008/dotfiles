@@ -7,6 +7,7 @@
     disabledPackages: [
       "autocomplete-ruby"
     ]
+    projectHome: "/Users/Anvil/Github"
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
@@ -21,10 +22,15 @@
   "line-ending-selector":
     defaultLineEnding: "LF"
   "linter-ui-default": {}
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
   "one-dark-ui": {}
   "package-sync":
     createOnChange: true
     forceOverwrite: true
   "split-diff": {}
+  wakatime:
+    apikey: "Enter your api key..."
   welcome:
     showOnStartup: false

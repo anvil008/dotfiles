@@ -15,22 +15,26 @@ brew upgrade
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-cd os/mac
+cd os/macos
 brew bundle
 cd ..
 cd ..
 
 brew cleanup
 
-# Make ZSH the default shell environment
-chsh -s $(which zsh)
+# Make ZSH from homebrew the default shell environment
+chsh -s /usr/local/bin/zsh
 
 # Install packages
 source "$PWD/packages/yarn.sh"
 source "$PWD/packages/apm.sh"
 
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 #Symbolic link dotfiles to ~/
 ln -sf "$PWD/atom/config.cson" ~/.atom/
+ln -sf "$PWD/atom/github.cson" ~/.atom/
 ln -sf "$PWD/atom/init.coffee" ~/.atom/
 ln -sf "$PWD/atom/keymap.cson" ~/.atom/
 ln -sf "$PWD/atom/packages.cson" ~/.atom/
@@ -49,19 +53,20 @@ ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-autosuggestions" ~/.oh-my-zsh/custom/plug
 ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/plugins
 ln -sf "$PWD/shell/.editorconfig" ~
 ln -sf "$PWD/shell/.hushlogin" ~
-# ln -sf "$PWD/shell/.curlrc" ~
+
 # ln -sf "$PWD/shell/.inputrc" ~
 # ln -sf "$PWD/shell/.wgetrc" ~
 # ln -sf "$PWD/shell/bash/.bash_profile" ~
 # ln -sf "$PWD/shell/bash/.bash_prompt" ~
 # ln -sf "$PWD/shell/bash/.bashrc" ~
 # source "$PWD/shell/bash/.bash_profile"
+
 ln -sf ~/Dropbox/Developer/private.zsh ~/.oh-my-zsh/custom/
 
 # Updates macOS and all packages
 apm update && yarn global upgrade && apm update && gem update && softwareupdate -lia
 
 #Set macOS defaults
-source "$PWD/os/mac/macos.sh"
+source "$PWD/os/macos/macos.sh"
 
 echo "Your Mac has been setup $USER"

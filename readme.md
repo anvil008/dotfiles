@@ -17,6 +17,24 @@ Clone the repository.
 git clone https://github.com/anvil008/dotfiles.git
 ```
 
+Edit /etc/shells to add a new entry for the Homebrew ZSH.
+
+```shell
+sudo vim /etc/shells
+```
+
+At the end of the file add /usr/local/bin/zsh, which is the path to the Homebrew binary for ZSH. Your /etc/shells should look like this:
+
+```shell
+/bin/bash
+/bin/csh
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+/usr/local/bin/zsh
+```
+
 Change the following symbolic link to link your personal private.zsh file (containing private keys) in `setup.sh` file.
 
 ```shell
