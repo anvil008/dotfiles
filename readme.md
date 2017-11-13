@@ -61,9 +61,8 @@ Brew packages and cask packages can be set in `macos/Brewfile`.
 Atom packages can be set in `atom/packages.cson`.  
 They can be installed running the Sync Packages command from the `package-sync` package.
 
-#### Npm/Yarn packages
-Yarn/Npm packages can be set in `packages/yarn.sh`.
-
+#### Packages installations
+Global packages can be set in packages folder for each package manager.
 
 ## Maintainers
 

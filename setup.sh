@@ -19,15 +19,16 @@ cd os/macos
 brew bundle
 cd ..
 cd ..
-
 brew cleanup
 
 # Make ZSH from homebrew the default shell environment
 chsh -s /usr/local/bin/zsh
 
 # Install packages
-source "$PWD/packages/yarn.sh"
 source "$PWD/packages/apm.sh"
+source "$PWD/packages/pip.sh"
+source "$PWD/packages/ruby.sh"
+source "$PWD/packages/yarn.sh"
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -64,7 +65,10 @@ ln -sf "$PWD/shell/.hushlogin" ~
 ln -sf ~/Dropbox/Developer/private.zsh ~/.oh-my-zsh/custom/
 
 # Updates macOS and all packages
-apm update && yarn global upgrade && apm update && gem update && softwareupdate -lia
+apm update
+gem update
+yarn global upgrade
+softwareupdate -lia
 
 #Set macOS defaults
 source "$PWD/os/macos/macos.sh"
