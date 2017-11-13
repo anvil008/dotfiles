@@ -18,12 +18,13 @@ git clone https://github.com/anvil008/dotfiles.git
 ```
 
 2. Install node & npm from https://nodejs.org/en/download/
-Edit /etc/shells to add a new entry for the Homebrew ZSH.
+
+3. Edit /etc/shells to add a new entry for the Homebrew ZSH.
 ```shell
 sudo vim /etc/shells
 ```
 
-3. At the end of the file add /usr/local/bin/zsh, which is the path to the Homebrew binary for ZSH. Your /etc/shells should look like this:
+4. At the end of the file add /usr/local/bin/zsh, which is the path to the Homebrew binary for ZSH. Your /etc/shells should look like this:
 ```shell
 /bin/bash
 /bin/csh
@@ -34,17 +35,17 @@ sudo vim /etc/shells
 /usr/local/bin/zsh
 ```
 
-4. Change the following symbolic link to link your personal private.zsh file (containing private keys) in `setup.sh` file.
+5. Change the following symbolic link to link your personal private.zsh file (containing private keys) in `setup.sh` file.
 ```shell
 ln -sf ~/Dropbox/Developer/dotfiles/.private
 ```
 
-5. To run the setup file.
+6. To run the setup file.
 ```shell
 source setup.sh
 ```
 
-6. Use the theme Snazzy.terminal from the themes/terminal-snazzy folder.
+7. Use the theme Snazzy.terminal from the themes/terminal-snazzy folder.
 
 ### Personalization
 
