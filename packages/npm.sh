@@ -1,16 +1,12 @@
 #!/bin/sh
 
 packages=(
-    diff-so-fancy
-    git-recent
+		pure-prompt
+		git-recent
     git-open
-    gulp
+    gulp-cli
     http-server
-    servedir
-    flow-bin
-    flow-typed
     npm-check-updates
-    webpack
     nodemon
     svgo
     yo
@@ -19,8 +15,6 @@ packages=(
     trash-cli
     fast-cli
     speed-test
-    public-ip
-		pure-prompt
 )
 
-yarn global add "${packages[@]}"
+npm install -g "${packages[@]}"

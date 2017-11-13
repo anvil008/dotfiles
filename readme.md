@@ -17,14 +17,12 @@ The zsh dotfiles uses the oh-my-zsh framework with custom dotfiles in the custom
 git clone https://github.com/anvil008/dotfiles.git
 ```
 
-2. Install node & npm from https://nodejs.org/en/download/
-
-3. Edit /etc/shells to add a new entry for the Homebrew ZSH.
+1.  Edit /etc/shells to add a new entry for the Homebrew ZSH.
 ```shell
 sudo vim /etc/shells
 ```
 
-4. At the end of the file add /usr/local/bin/zsh, which is the path to the Homebrew binary for ZSH. Your /etc/shells should look like this:
+1. At the end of the file add /usr/local/bin/zsh, which is the path to the Homebrew binary for ZSH. Your /etc/shells should look like this:
 ```shell
 /bin/bash
 /bin/csh
@@ -35,17 +33,17 @@ sudo vim /etc/shells
 /usr/local/bin/zsh
 ```
 
-5. Change the following symbolic link to link your personal private.zsh file (containing private keys) in `setup.sh` file.
+1. Change the following symbolic link to link your personal private.zsh file (containing private keys) in `setup.sh` file.
 ```shell
 ln -sf ~/Dropbox/Developer/dotfiles/.private
 ```
 
-6. To run the setup file.
+1. To run the setup file.
 ```shell
 source setup.sh
 ```
 
-7. Use the theme Snazzy.terminal from the themes/terminal-snazzy folder.
+1. Use the theme Snazzy.terminal from the themes/terminal-snazzy folder.
 
 ### Personalization
 

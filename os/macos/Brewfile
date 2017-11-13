@@ -32,7 +32,7 @@ brew 'hub'
 brew 'tree'
 brew 'mackup'
 brew 'mas'
-# brew 'node'
+brew 'node'
 brew 'trash'
 brew 'wget'
 brew 'ack'
@@ -46,7 +46,7 @@ brew 'vbindiff'
 brew 'zopfli'
 brew 'pv'
 
-#Install package managers
+#Install Package Managers
 brew 'yarn'
 
 # Apps

@@ -21,6 +21,9 @@ cd ..
 cd ..
 brew cleanup
 
+#Install package managers
+npm install npm --global
+
 # Install Mac-CLI
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
 
@@ -31,7 +34,7 @@ chsh -s /usr/local/bin/zsh
 source "$PWD/packages/apm.sh"
 source "$PWD/packages/pip.sh"
 source "$PWD/packages/ruby.sh"
-source "$PWD/packages/yarn.sh"
+source "$PWD/packages/npm.sh"
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -70,7 +73,7 @@ ln -sf ~/Dropbox/Developer/private.zsh ~/.oh-my-zsh/custom/
 # Updates macOS and all packages
 apm update
 gem update
-yarn global upgrade
+npm update -g
 softwareupdate -lia
 
 #Set macOS defaults
