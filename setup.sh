@@ -21,6 +21,9 @@ cd ..
 cd ..
 brew cleanup
 
+# Install Mac-CLI
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
+
 # Make ZSH from homebrew the default shell environment
 chsh -s /usr/local/bin/zsh
 

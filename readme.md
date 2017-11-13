@@ -17,6 +17,8 @@ Clone the repository.
 git clone https://github.com/anvil008/dotfiles.git
 ```
 
+Install node & npm from https://nodejs.org/en/download/
+
 Edit /etc/shells to add a new entry for the Homebrew ZSH.
 
 ```shell
