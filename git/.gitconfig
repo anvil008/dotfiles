@@ -187,6 +187,7 @@
 [user]
 	name = Anvil Palamattam
 	email = anvil008@me.com
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
