@@ -11,7 +11,7 @@
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
-    fontFamily: "Hack"
+    fontFamily: "Fira Code"
     fontSize: 12
     invisibles: {}
     showIndentGuide: true
@@ -25,6 +25,7 @@
   minimap:
     absoluteMode: true
     adjustAbsoluteModeHeight: true
+    autoToggle: false
   "one-dark-ui": {}
   "package-sync":
     createOnChange: true
