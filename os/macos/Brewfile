@@ -46,7 +46,7 @@ brew 'vbindiff'
 brew 'zopfli'
 brew 'pv'
 
-#Install package managers
+#Install Package Managers
 brew 'yarn'
 
 # Apps
