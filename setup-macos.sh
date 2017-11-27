@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Setting up $USER's Mac..."
+echo "Setting up $USER's Windows..."
 
 # Checking for latest verison
 echo "Pulling latest origin from Github"
