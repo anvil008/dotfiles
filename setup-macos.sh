@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Setting up $USER's Windows..."
+echo "Setting up $USER's Mac..."
 
 # Checking for latest verison
 echo "Pulling latest origin from Github"
@@ -30,13 +30,11 @@ brew cleanup
 echo "Installing npm"
 npm install npm -g
 
-# Install Mac-CLI
-echo "Installing Mac-CLI"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
-
 # Make ZSH from homebrew the default shell environment
 echo "Setting ZSH from homebrew as the default shell"
-chsh -s /usr/local/bin/zsh
+sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+which zsh
+zsh --version
 
 # Install packages
 echo "Installing all global packages"
@@ -48,6 +46,13 @@ source "$PWD/packages/npm.sh"
 # Install oh-my-zsh
 echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#Symbolic link Home folders to Dropbox
+ln -sf ~/Desktop  ~/Dropbox/
+ln -sf ~/Documents  ~/Dropbox/
+ln -sf ~/Movies  ~/Dropbox/
+ln -sf ~/Music  ~/Dropbox/
+ln -sf ~/Pictures  ~/Dropbox/
 
 #Symbolic link dotfiles to ~/
 echo "Symbolic linking dotfiles"
@@ -63,6 +68,7 @@ ln -sf "$PWD/atom/styles.less" ~/.atom/
 ln -sf "$PWD/git/.gitattributes" ~
 ln -sf "$PWD/git/.gitconfig" ~
 ln -sf "$PWD/git/.gitignore_global" ~
+ln -sf "$PWD/git/.gitmessage" ~
 
 ln -sf "$PWD/hyper/.hyper.js" ~
 
@@ -78,16 +84,17 @@ ln -sf "$PWD/shell/.editorconfig" ~
 ln -sf "$PWD/shell/.hushlogin" ~
 
 ln -sf ~/Dropbox/Developer/private.zsh ~/.oh-my-zsh/custom/
+ln -sf ~/Dropbox/Developer/.wakatime.cfg ~
 # ln -sf "$PWD/shell/.inputrc" ~
 # ln -sf "$PWD/shell/.wgetrc" ~
-# ln -sf "$PWD/shell/bash/.bash_profile" ~
-# ln -sf "$PWD/shell/bash/.bash_prompt" ~
-# ln -sf "$PWD/shell/bash/.bashrc" ~
-# source "$PWD/shell/bash/.bash_profile"s
 
 # Update macOS
-echo "Installing macOS updates"
+echo "Updating macOS"
 softwareupdate -lia
+echo "Updating all Mac Store Apps"
+mas upgrade
+echo "Updating all Brew Cask Apps"
+brew cu
 
 #Set macOS defaults
 echo "Setting up macOS defaults"

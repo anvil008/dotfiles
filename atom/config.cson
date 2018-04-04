@@ -2,26 +2,31 @@
   "atom-beautify":
     general:
       _analyticsUserId: "9d79d86b-0173-4c3c-a1aa-db3fc0d868ac"
+  "atom-ide-ui":
+    use: {}
   core:
-    allowPendingPaneItems: false
     disabledPackages: [
       "autocomplete-ruby"
+      "linter"
     ]
-    projectHome: "/Users/Anvil/Github"
+    projectHome: "/Users/Anvil/Projects"
     telemetryConsent: "no"
     titleBar: "custom"
+    useTreeSitterParsers: true
   editor:
     fontFamily: "Fira Code"
     fontSize: 12
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
-    softWrapAtPreferredLineLength: true
+    softWrap: true
   "exception-reporting":
     userId: "582938fb-a7d6-4690-93da-6e2f17aca978"
   "line-ending-selector":
     defaultLineEnding: "LF"
   "linter-ui-default": {}
+  "markdown-preview":
+    useGitHubStyle: true
   minimap:
     absoluteMode: true
     adjustAbsoluteModeHeight: true
@@ -32,6 +37,6 @@
     forceOverwrite: true
   "split-diff": {}
   wakatime:
-    apikey: "Enter your api key..."
+    apikey: "Saved in your ~/.wakatime.cfg file"
   welcome:
     showOnStartup: false

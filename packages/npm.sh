@@ -1,20 +1,21 @@
 #!/bin/sh
 
 packages=(
-		pure-prompt
+		conduct
+		create-react-app
+		fast-cli
+		git-open
 		git-recent
-    git-open
-    gulp-cli
-    http-server
-    npm-check-updates
-    nodemon
-    svgo
-    yo
-    xo
-    conduct
-    trash-cli
-    fast-cli
-    speed-test
+		gulp-cli
+		http-server
+		nodemon
+		npm-check-updates
+		pure-prompt
+		speed-test
+		svgo
+		trash-cli
+		xo
+		yo
 )
 
 npm install -g "${packages[@]}"

@@ -6,7 +6,7 @@
 
 ## Background
 
-This is my set of dotfiles which is primarily based around zsh, hyper.js, brewfile. It uses symbolic links to link the files from the dotfiles folder to your home folder.
+Personal set of dotfiles which is primarily based around zsh, hyper.js, brewfile. It uses symbolic links to link the files from the dotfiles folder to your home folder.
 
 The zsh dotfiles uses the oh-my-zsh framework with custom dotfiles in the custom folder.
 
@@ -19,10 +19,10 @@ git clone https://github.com/anvil008/dotfiles.git
 
 1.  Edit /etc/shells to add a new entry for the Homebrew ZSH.
 ```shell
-sudo vim /etc/shells
+sudo nano /etc/shells
 ```
 
-1. At the end of the file add /usr/local/bin/zsh, which is the path to the Homebrew binary for ZSH. Your /etc/shells should look like this:
+  At the end of the file add /usr/local/bin/zsh, which is the path to the Homebrew binary for ZSH. Your /etc/shells should look like this:
 ```shell
 /bin/bash
 /bin/csh
