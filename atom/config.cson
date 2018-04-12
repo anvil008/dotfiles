@@ -6,7 +6,6 @@
     use: {}
   core:
     disabledPackages: [
-      "autocomplete-ruby"
       "linter"
     ]
     projectHome: "/Users/Anvil/Projects"
