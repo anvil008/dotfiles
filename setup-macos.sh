@@ -6,6 +6,10 @@ echo "Setting up $USER's Mac..."
 echo "Pulling latest origin from Github"
 git pull origin master;
 
+# Update macOS and install Xcode
+sudo softwareupdate -i -a
+xcode-select --install
+
 # Check for Homebrew and install if not installed
 echo "Checking for Brew and installing if not found"
 if test ! $(which brew); then
