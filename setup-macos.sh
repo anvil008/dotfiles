@@ -98,7 +98,7 @@ softwareupdate -lia
 echo "Updating all Mac Store Apps"
 mas upgrade
 echo "Updating all Brew Cask Apps"
-brew cu
+brew cu -all --cleanup --yes
 
 #Set macOS defaults
 echo "Setting up macOS defaults"
