@@ -17,27 +17,6 @@ The zsh dotfiles uses the oh-my-zsh framework with custom dotfiles in the custom
 git clone https://github.com/anvil008/dotfiles.git
 ```
 
-1.  Edit /etc/shells to add a new entry for the Homebrew ZSH.
-```shell
-sudo nano /etc/shells
-```
-
-  At the end of the file add /usr/local/bin/zsh, which is the path to the Homebrew binary for ZSH. Your /etc/shells should look like this:
-```shell
-/bin/bash
-/bin/csh
-/bin/ksh
-/bin/sh
-/bin/tcsh
-/bin/zsh
-/usr/local/bin/zsh
-```
-
-1. Change the following symbolic link to link your personal private.zsh file (containing private keys) in `setup.sh` file.
-```shell
-ln -sf ~/Dropbox/Developer/dotfiles/.private
-```
-
 1. To run the setup file.
 ```shell
 source setup.sh

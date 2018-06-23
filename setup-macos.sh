@@ -6,8 +6,9 @@ echo "Setting up $USER's Mac..."
 echo "Pulling latest origin from Github"
 git pull origin master;
 
-# Update macOS and install Xcode
-sudo softwareupdate -i -a
+# Update macOS and install Xcode Command Line Tools
+echo "Updating macOS"
+sudo softwareupdate -lia
 xcode-select --install
 
 # Check for Homebrew and install if not installed
@@ -52,30 +53,34 @@ echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 #Symbolic link Home folders to Dropbox
+echo "Symbolic linking Dropbox folders"
 ln -sf ~/Desktop  ~/Dropbox/
 ln -sf ~/Documents  ~/Dropbox/
 ln -sf ~/Movies  ~/Dropbox/
-ln -sf ~/Music  ~/Dropbox/
+# ln -sf ~/Music  ~/Dropbox/
 ln -sf ~/Pictures  ~/Dropbox/
 
 #Symbolic link dotfiles to ~/
-echo "Symbolic linking dotfiles"
+echo "Symbolic linking dotfiles..."
 
+echo "Symbolic linking atom"
 ln -sf "$PWD/atom/config.cson" ~/.atom/
 ln -sf "$PWD/atom/github.cson" ~/.atom/
 ln -sf "$PWD/atom/init.coffee" ~/.atom/
 ln -sf "$PWD/atom/keymap.cson" ~/.atom/
-ln -sf "$PWD/atom/packages.cson" ~/.atom/
 ln -sf "$PWD/atom/snippets.cson" ~/.atom/
 ln -sf "$PWD/atom/styles.less" ~/.atom/
 
+echo "Symbolic linking git"
 ln -sf "$PWD/git/.gitattributes" ~
 ln -sf "$PWD/git/.gitconfig" ~
 ln -sf "$PWD/git/.gitignore_global" ~
 ln -sf "$PWD/git/.gitmessage" ~
 
+echo "Symbolic linking hyper terminal"
 ln -sf "$PWD/hyper/.hyper.js" ~
 
+echo "Symbolic linking zsh files"
 ln -sf "$PWD/shell/zsh/.zshrc" ~
 ln -sf "$PWD/shell/zsh/aliases.zsh" ~/.oh-my-zsh/custom/
 ln -sf "$PWD/shell/zsh/exports.zsh" ~/.oh-my-zsh/custom/
@@ -84,24 +89,25 @@ ln -sf "$PWD/shell/zsh/path.zsh" ~/.oh-my-zsh/custom/
 ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-autosuggestions" ~/.oh-my-zsh/custom/plugins
 ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/plugins
 
+echo "Symbolic linking extras"
 ln -sf "$PWD/shell/.editorconfig" ~
 ln -sf "$PWD/shell/.hushlogin" ~
-
 ln -sf ~/Dropbox/Developer/private.zsh ~/.oh-my-zsh/custom/
 ln -sf ~/Dropbox/Developer/.wakatime.cfg ~
-# ln -sf "$PWD/shell/.inputrc" ~
-# ln -sf "$PWD/shell/.wgetrc" ~
+ln -sf "$PWD/shell/.inputrc" ~
+ln -sf "$PWD/shell/.wgetrc" ~
 
 # Update macOS
-echo "Updating macOS"
-softwareupdate -lia
 echo "Updating all Mac Store Apps"
 mas upgrade
 echo "Updating all Brew Cask Apps"
-brew cu -all --cleanup --yes
+brew cu --all --cleanup --yes
 
 #Set macOS defaults
 echo "Setting up macOS defaults"
 source "$PWD/os/macos/macos.sh"
 
+echo "."
+echo ".."
+echo "..."
 echo "Your Mac has been setup $USER :)"

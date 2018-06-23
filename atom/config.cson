@@ -5,8 +5,20 @@
   "atom-ide-ui":
     use: {}
   core:
+    customFileTypes:
+      "source.ini": [
+        ".hgrc"
+        ".buckconfig"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "linter"
+      "nuclide"
     ]
     projectHome: "/Users/Anvil/Projects"
     telemetryConsent: "no"
