@@ -16,10 +16,7 @@
       "source.python": [
         "BUCK"
       ]
-    disabledPackages: [
-      "linter"
-      "nuclide"
-    ]
+    disabledPackages: []
     projectHome: "/Users/Anvil/Projects"
     telemetryConsent: "no"
     titleBar: "custom"
@@ -48,6 +45,9 @@
   "package-sync":
     createOnChange: true
     forceOverwrite: true
+  "platformio-ide-terminal":
+    style:
+      theme: "linux"
   "split-diff": {}
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
