@@ -28,7 +28,16 @@ alias week='date +%V'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+alias update='sudo softwareupdate -i -a;
+ 							brew update;
+							brew upgrade;
+							brew cleanup;
+							npm install npm -g;
+							npm update -g;
+							sudo gem update --system;
+							sudo gem update;
+							sudo gem cleanup;
+							brew cu --all --cleanup --yes'
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
