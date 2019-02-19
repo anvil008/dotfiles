@@ -50,6 +50,6 @@
       theme: "linux"
   "split-diff": {}
   wakatime:
-    apikey: "Saved in your ~/.wakatime.cfg file"
+    apikey: "Enter your api key..."
   welcome:
     showOnStartup: false
