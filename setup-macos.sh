@@ -92,8 +92,8 @@ ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/
 echo "Symbolic linking extras"
 ln -sf "$PWD/shell/.editorconfig" ~
 ln -sf "$PWD/shell/.hushlogin" ~
-ln -sf ~/Dropbox/Tools/private.zsh ~/.oh-my-zsh/custom/
-ln -sf ~/Dropbox/Tools/.wakatime.cfg ~
+ln -sf ~/Dropbox/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/
+ln -sf ~/Dropbox/Dev\ Tools/.wakatime.cfg ~
 ln -sf "$PWD/shell/.inputrc" ~
 ln -sf "$PWD/shell/.wgetrc" ~
 
