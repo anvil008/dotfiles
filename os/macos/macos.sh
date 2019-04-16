@@ -15,10 +15,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Hyperion"
-sudo scutil --set HostName "Hyperion"
-sudo scutil --set LocalHostName "Hyperion"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Hyperion"
+sudo scutil --set ComputerName "Anvil-Mac"
+sudo scutil --set HostName "Anvil-Mac"
+sudo scutil --set LocalHostName "Anvil-Mac"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Anvil-Mac"
 
 # Set standby delay to 24 hours (default is 1 hour) (Does not seem to work)
 sudo pmset -a standbydelay 86400
