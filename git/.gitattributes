@@ -1,6 +1,6 @@
 * text=auto eol=lf
-*.txt text
 *.c text
 *.h text
 *.jpg binary
 *.js text eol=lf
+*.txt text
