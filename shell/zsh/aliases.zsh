@@ -117,8 +117,6 @@ extract () {
    fi
 }
 
-
-
 # findPid: find out the pid of a specified process
 findPid () { lsof -t -c "$@" ; }
 
@@ -137,7 +135,6 @@ alias ttop="top -R -F -s 10 -o rsize"
 
 # List processes owned by my user:
 my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
-
 
 # 2017 Aliasses
 # Safer Removal by moving to bin (uses npm trash-cli)

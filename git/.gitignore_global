@@ -1,36 +1,36 @@
 # Mac files
-.DS_Store
-.DS_Store?
-*.DS_Store
-Desktop.ini
-.AppleDouble
-.LSOverride
-Icon
 ._*
-Thumbs.db
-.Spotlight-V100
-.Trashes
+.apdisk
 .AppleDB
 .AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-.fseventsd
-.TemporaryItems
-.VolumeIcon.icns
+.AppleDouble
 .com.apple.timemachine.donotpresent
 .DocumentRevisions-V100
+.DS_Store
+.DS_Store?
+.fseventsd
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+*.DS_Store
+Desktop.ini
+Icon
+Network Trash Folder
+Temporary Items
+Thumbs.db
 
 # Windows files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
-$RECYCLE.BIN/
 *.cab
+*.lnk
 *.msi
 *.msm
 *.msp
-*.lnk
+$RECYCLE.BIN/
+ehthumbs_vista.db
+ehthumbs.db
+Thumbs.db
 
 # Dropbox settings and caches
 .dropbox

@@ -22,12 +22,12 @@ git clone https://github.com/anvil008/dotfiles.git
 source setup.sh
 ```
 
-1. Use the theme Snazzy.terminal from the themes/terminal-snazzy folder.
+1. Use the theme snazzy.terminal from the themes/terminal folder.
 
 ### Personalization
 
 #### Mac App Store
-Mac apps to be installed can be set in `macos/Brewfile`.  
+Mac apps to be installed can be set in `macos/Brewfile`.
 (Note : it will only install apps that the user owns only.)
 
 #### Homebrew Packages
@@ -42,8 +42,8 @@ Global packages can be set in packages folder for each package manager.
 
 ## Contribute
 
-Feel free to dive in! [Open an issue](https://github.com/anvil008/dotfiles/issues/new) or submit PRs.  
-Dotfiles follows the [Contributor Code of Conduct](code-of-conduct.md).  
+Feel free to dive in! [Open an issue](https://github.com/anvil008/dotfiles/issues/new) or submit PRs.
+Dotfiles follows the [Contributor Code of Conduct](code-of-conduct.md).
 By participating in this project you agree to abide by its terms.
 
 ## License

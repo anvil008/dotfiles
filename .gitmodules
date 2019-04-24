@@ -1,12 +1,3 @@
-[submodule "themes/Terminal/atom-one-dark-terminal"]
-	path = themes/Terminal/atom-one-dark-terminal
-	url = https://github.com/nathanbuchar/atom-one-dark-terminal
-[submodule "themes/iTerm/iterm2-snazzy"]
-	path = themes/iTerm/iterm2-snazzy
-	url = https://github.com/sindresorhus/iterm2-snazzy
-[submodule "themes/Terminal/terminal-snazzy"]
-	path = themes/Terminal/terminal-snazzy
-	url = https://github.com/sindresorhus/terminal-snazzy
 [submodule "themes/zsh-prompts/pure"]
 	path = themes/zsh-prompts/pure
 	url = https://github.com/sindresorhus/pure

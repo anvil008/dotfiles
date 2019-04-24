@@ -9,7 +9,7 @@ module.exports = {
 
     // font family with optional fallbacks
     fontFamily:
-      'Fira Code, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      'Fira Code',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: "rgba(248,28,229,0.8)",
