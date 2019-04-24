@@ -124,8 +124,5 @@ cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
 mas 'Amphetamine', id: 937984704
-mas 'Bear', id: 1091189122
 mas 'Pages', id: 409201541
-mas 'Spark', id: 1176895641
-mas 'Speedtest', id: 1153157709
 mas 'Xcode', id: 497799835
