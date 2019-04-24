@@ -63,14 +63,6 @@ ln -sf ~/Pictures  ~/Dropbox/
 ## Symbolic link dotfiles to ~/
 echo "Symbolic linking dotfiles..."
 
-# echo "Symbolic linking atom"
-# ln -sf "$PWD/atom/config.cson" ~/.atom/
-# ln -sf "$PWD/atom/github.cson" ~/.atom/
-# ln -sf "$PWD/atom/init.coffee" ~/.atom/
-# ln -sf "$PWD/atom/keymap.cson" ~/.atom/
-# ln -sf "$PWD/atom/snippets.cson" ~/.atom/
-# ln -sf "$PWD/atom/styles.less" ~/.atom/
-
 echo "Symbolic linking git"
 ln -sf "$PWD/git/.gitattributes" ~
 ln -sf "$PWD/git/.gitconfig" ~

@@ -33,10 +33,6 @@ Mac apps to be installed can be set in `macos/Brewfile`.
 #### Homebrew Packages
 Brew packages and cask packages can be set in `macos/Brewfile`.
 
-#### Atom packages
-Atom packages can be set in `atom/packages.cson`.  
-They can be installed running the Sync Packages command from the `package-sync` package.
-
 #### Packages installations
 Global packages can be set in packages folder for each package manager.
 
