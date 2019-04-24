@@ -43,10 +43,9 @@ zsh --version
 
 # Install packages
 echo "Installing all global packages"
-# source "$PWD/packages/apm.sh"
+source "$PWD/packages/npm.sh"
 source "$PWD/packages/pip.sh"
 source "$PWD/packages/ruby.sh"
-source "$PWD/packages/npm.sh"
 
 # Install oh-my-zsh
 echo "Installing oh-my-zsh"
