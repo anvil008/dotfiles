@@ -43,10 +43,9 @@ zsh --version
 
 # Install packages
 echo "Installing all global packages"
-# source "$PWD/packages/apm.sh"
+source "$PWD/packages/npm.sh"
 source "$PWD/packages/pip.sh"
 source "$PWD/packages/ruby.sh"
-source "$PWD/packages/npm.sh"
 
 # Install oh-my-zsh
 echo "Installing oh-my-zsh"
@@ -56,8 +55,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo "Symbolic linking Dropbox folders"
 ln -sf ~/Desktop  ~/Dropbox/
 ln -sf ~/Documents  ~/Dropbox/
-ln -sf ~/Movies  ~/Dropbox/
-# ln -sf ~/Music  ~/Dropbox/
 ln -sf ~/Pictures  ~/Dropbox/
 
 # Symbolic link dotfiles to ~/
