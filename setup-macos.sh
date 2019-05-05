@@ -55,8 +55,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo "Symbolic linking Dropbox folders"
 ln -sf ~/Desktop  ~/Dropbox/
 ln -sf ~/Documents  ~/Dropbox/
-ln -sf ~/Movies  ~/Dropbox/
-# ln -sf ~/Music  ~/Dropbox/
 ln -sf ~/Pictures  ~/Dropbox/
 
 # Symbolic link dotfiles to ~/
