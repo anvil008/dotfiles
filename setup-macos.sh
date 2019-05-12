@@ -44,8 +44,6 @@ zsh --version
 # Install packages
 echo "Installing all global packages"
 source "$PWD/packages/npm.sh"
-source "$PWD/packages/pip.sh"
-source "$PWD/packages/ruby.sh"
 
 # Install oh-my-zsh
 echo "Installing oh-my-zsh"
@@ -64,7 +62,6 @@ echo "Symbolic linking git"
 ln -sf "$PWD/git/.gitattributes" ~
 ln -sf "$PWD/git/.gitconfig" ~
 ln -sf "$PWD/git/.gitignore_global" ~
-ln -sf "$PWD/git/.gitmessage" ~
 
 echo "Symbolic linking hyper terminal"
 ln -sf "$PWD/hyper/.hyper.js" ~
