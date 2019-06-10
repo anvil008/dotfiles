@@ -1,9 +1,7 @@
 # Taps
-tap 'bramstein/webfonttools'
-tap 'buo/cask-upgrade'
+tap 'buo/cask-upgrade' #cask upgrade cli
 tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'homebrew/bundle'
+
 
 # Install Shells
 brew 'zsh'
