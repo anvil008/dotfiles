@@ -89,10 +89,10 @@ echo "Updating all Brew Cask Apps"
 brew cu --all --cleanup --yes
 
 # Set macOS defaults
-echo "Setting up macOS defaults"
-source "$PWD/os/macos/macos.sh"
-echo "Applying app preferences"
-source "$PWD/os/macos/app-preferences.sh"
+# echo "Setting up macOS defaults"
+# source "$PWD/os/macos/macos.sh"
+# echo "Applying app preferences"
+# source "$PWD/os/macos/app-preferences.sh"
 
 echo "."
 echo ".."
