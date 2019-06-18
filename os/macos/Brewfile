@@ -1,7 +1,6 @@
 # Taps
-tap 'buo/cask-upgrade' #cask upgrade cli
 tap 'caskroom/cask'
-
+tap 'buo/cask-upgrade' #cask for upgrade-cli
 
 # Install Shells
 brew 'zsh'
@@ -66,18 +65,14 @@ cask 'java'
 cask 'jetbrains-toolbox'
 cask 'keka'
 cask 'mysqlworkbench'
-cask 'ndm'
-# cask 'parallels'
+cask 'parallels'
 cask 'plex-media-player'
 cask 'private-internet-access'
-cask 'qbittorrent'
 cask 'raindropio'
-cask 'safari-technology-preview'
 cask 'sequel-pro'
 cask 'shuttle'
 cask 'slack'
 cask 'spectacle'
-cask 'spotify'
 cask 'steam'
 cask 'tower'
 cask 'transmission'
@@ -87,9 +82,7 @@ cask 'visual-studio-code'
 cask 'teamviewer'
 cask 'openemu'
 cask 'caprine'
-cask 'onedrive'
 cask 'transmission'
-cask 'intel-power-gadget'
 cask 'imagealpha'
 cask 'cyberduck'
 cask 'filezilla'
@@ -108,15 +101,8 @@ cask 'suspicious-package'
 cask 'webpquicklook'
 
 # Fonts
-brew 'sfnt2woff'
-brew 'sfnt2woff-zopfli'
-brew 'woff2'
-cask 'font-andale-mono'
 cask 'font-fira-code'
-cask 'font-hack'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
+
 
 # Install Mac App Store apps
 mas 'Amphetamine', id: 937984704
