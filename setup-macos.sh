@@ -68,6 +68,7 @@ ln -sf "$PWD/shell/.hushlogin" ~
 ln -sf "$PWD/shell/.inputrc" ~
 ln -sf "$PWD/shell/.wgetrc" ~
 ln -sf "$PWD/shell/.prettierrc" ~
+ln -sf "$PWD/shell/.alacritty.yml" ~
 
 # Update macOS
 echo "Updating all Mac Store Apps"
