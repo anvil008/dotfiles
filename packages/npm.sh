@@ -3,7 +3,7 @@
 packages=(
 		conduct
 		create-react-app
-		fast-cli
+		gatsby-cli
 		git-open
 		git-recent
 		gulp-cli

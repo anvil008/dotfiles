@@ -2,17 +2,13 @@
 
 echo "Setting up $USER's Mac..."
 
-# Checking for latest verison
-echo "Pulling latest origin from Github"
-git pull origin master;
-
 # Update macOS and install Xcode Command Line Tools
 echo "Updating macOS"
 sudo softwareupdate -lia
 xcode-select --install
 
 # Check for Homebrew and install if not installed
-echo "Checking for Brew and installing if not found"
+echo "Checking for Homebrew and installing if not found"
 if test ! $(which brew); then
 	/usr/bin/ruby -e "$(curl sSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
@@ -31,10 +27,6 @@ cd ..
 cd ..
 brew cleanup
 
-# Install package managers that are not suitable to be installed through Homebrew
-echo "Installing npm"
-npm install npm -g
-
 # Make ZSH from homebrew the default shell environment
 echo "Setting ZSH from homebrew as the default shell"
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
@@ -48,12 +40,6 @@ source "$PWD/packages/npm.sh"
 # Install oh-my-zsh
 echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Symbolic link Home folders to Dropbox
-echo "Symbolic linking Dropbox folders"
-ln -sf ~/Desktop  ~/Dropbox/
-ln -sf ~/Documents  ~/Dropbox/
-ln -sf ~/Pictures  ~/Dropbox/
 
 # Symbolic link dotfiles to ~/
 echo "Symbolic linking dotfiles..."
@@ -78,9 +64,10 @@ ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/
 echo "Symbolic linking extras"
 ln -sf "$PWD/shell/.editorconfig" ~
 ln -sf "$PWD/shell/.hushlogin" ~
-ln -sf ~/Dropbox/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/
+#ln -sf ~/Dropbox/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/               # Need to update for iCloud Drive
 ln -sf "$PWD/shell/.inputrc" ~
 ln -sf "$PWD/shell/.wgetrc" ~
+ln -sf "$PWD/shell/.prettierrc" ~
 
 # Update macOS
 echo "Updating all Mac Store Apps"

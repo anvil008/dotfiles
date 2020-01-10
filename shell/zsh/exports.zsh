@@ -34,3 +34,6 @@ export LESS_TERMCAP_md="${yellow}";
 export MANPAGER='less -X';
 
 export BLOCKSIZE=1k
+
+#JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home)

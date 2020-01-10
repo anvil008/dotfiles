@@ -1,6 +1,7 @@
 # Taps
 tap 'caskroom/cask'
 tap 'buo/cask-upgrade' #cask for upgrade-cli
+tap 'teamookla/speedtest'
 
 # Install Shells
 brew 'zsh'
@@ -14,7 +15,6 @@ brew 'moreutils'
 
 # Install more recent versions of some macOS tools
 brew 'grep'
-brew 'openssh'
 brew 'screen'
 
 # Install Binaries
@@ -40,21 +40,20 @@ brew 'tree'
 brew 'vbindiff'
 brew 'wget'
 brew 'zopfli'
+brew 'speedtest'
 
 #Install Package Managers
 brew 'yarn'
 
 # Apps
+
+cask 'alacritty'
 cask 'adobe-creative-cloud'
 cask 'appcleaner'
 cask 'atom'
 cask 'battle-net'
-cask 'cakebrew'
 cask 'discord'
-cask 'dropbox'
-cask 'filebot'
 cask 'github'
-cask 'gitter'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'hyper'
@@ -65,14 +64,10 @@ cask 'java'
 cask 'jetbrains-toolbox'
 cask 'keka'
 cask 'mysqlworkbench'
-cask 'parallels'
 cask 'plex-media-player'
 cask 'private-internet-access'
-cask 'raindropio'
 cask 'sequel-pro'
 cask 'shuttle'
-cask 'slack'
-cask 'spectacle'
 cask 'steam'
 cask 'tower'
 cask 'transmission'
@@ -81,11 +76,9 @@ cask 'whatsapp'
 cask 'visual-studio-code'
 cask 'teamviewer'
 cask 'openemu'
-cask 'caprine'
 cask 'transmission'
 cask 'imagealpha'
 cask 'cyberduck'
-cask 'filezilla'
 
 # Quicklook
 cask 'qlcolorcode'

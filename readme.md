@@ -13,13 +13,15 @@ The zsh dotfiles uses the oh-my-zsh framework with custom dotfiles in the custom
 ## Installation
 
 1. Clone the repository.
+
 ```shell
 git clone https://github.com/anvil008/dotfiles.git
 ```
 
 1. To run the setup file.
+
 ```shell
-source setup.sh
+source setup-macos.sh
 ```
 
 1. Use the theme snazzy.terminal from the themes/terminal folder.
@@ -27,13 +29,16 @@ source setup.sh
 ### Personalization
 
 #### Mac App Store
+
 Mac apps to be installed can be set in `macos/Brewfile`.
 (Note : it will only install apps that the user owns only.)
 
 #### Homebrew Packages
+
 Brew packages and cask packages can be set in `macos/Brewfile`.
 
 #### Packages installations
+
 Global packages can be set in packages folder for each package manager.
 
 ## Maintainers

@@ -1,6 +1,3 @@
-[submodule "themes/zsh-prompts/pure"]
-	path = themes/zsh-prompts/pure
-	url = https://github.com/sindresorhus/pure
 [submodule "shell/zsh/zsh-plugins/zsh-autosuggestions"]
 	path = shell/zsh/zsh-plugins/zsh-autosuggestions
 	url = git://github.com/zsh-users/zsh-autosuggestions.git
