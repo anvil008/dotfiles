@@ -35,7 +35,7 @@ zsh --version
 
 # Install packages
 echo "Installing all global packages"
-source "$PWD/packages/npm.sh"
+source "$PWD/packages/yarn.sh"
 
 # Install oh-my-zsh
 echo "Installing oh-my-zsh"
@@ -64,11 +64,14 @@ ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/
 echo "Symbolic linking extras"
 ln -sf "$PWD/shell/.editorconfig" ~
 ln -sf "$PWD/shell/.hushlogin" ~
-#ln -sf ~/Dropbox/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/               # Need to update for iCloud Drive
 ln -sf "$PWD/shell/.inputrc" ~
 ln -sf "$PWD/shell/.wgetrc" ~
 ln -sf "$PWD/shell/.prettierrc" ~
 ln -sf "$PWD/shell/.alacritty.yml" ~
+
+echo "Copying private files"
+ln -sf ~/Documents/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/    	# Need to update to iCloud Drive
+ln sf ~/Documents/Dev\ Tools/.ssh ~/								# Need to update to iCloud Drive
 
 # Update macOS
 echo "Updating all Mac Store Apps"
@@ -77,10 +80,10 @@ echo "Updating all Brew Cask Apps"
 brew cu --all --cleanup --yes
 
 # Set macOS defaults
-# echo "Setting up macOS defaults"
-# source "$PWD/os/macos/macos.sh"
-# echo "Applying app preferences"
-# source "$PWD/os/macos/app-preferences.sh"
+echo "Setting up macOS defaults"
+source "$PWD/os/macos/macos.sh"
+echo "Applying app preferences"
+source "$PWD/os/macos/app-preferences.sh"
 
 echo "."
 echo ".."

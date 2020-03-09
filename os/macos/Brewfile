@@ -1,65 +1,24 @@
 # Taps
-tap 'caskroom/cask'
 tap 'buo/cask-upgrade' #cask for upgrade-cli
 tap 'teamookla/speedtest'
 
 # Install Shells
 brew 'zsh'
 
-# Install GNU core utilities (those that come with macOS are outdated)
-# Install some other useful utilities like `sponge`.
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew 'coreutils'
-brew 'findutils'
-brew 'moreutils'
-
-# Install more recent versions of some macOS tools
-brew 'grep'
-brew 'screen'
-
-# Install Binaries
-brew 'ack' # Better Search
-brew 'awscli'
-brew 'dark-mode' #Toggle Dark Mode from CLI
-brew 'git'
-brew 'git-lfs'
-brew 'hub'#https://hub.github.com
-brew 'lua'
-brew 'mas'
-brew 'mackup' # Backup App settings including dotfiles and others
-brew 'node'
-brew 'p7zip'
-brew 'pv'
-brew 'python'
-brew 'python@2'
-brew 'rename' # More powerful renamer
-brew 'ruby'
-brew 'testssl'
-brew 'trash'
-brew 'tree'
-brew 'vbindiff'
-brew 'wget'
-brew 'zopfli'
-brew 'speedtest'
-
 #Install Package Managers
 brew 'yarn'
 
 # Apps
-
 cask 'alacritty'
 cask 'adobe-creative-cloud'
-cask 'appcleaner'
-cask 'atom'
-cask 'battle-net'
 cask 'discord'
+cask 'docker'
 cask 'github'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'hyper'
 cask 'iina'
 cask 'imageoptim'
-cask 'iterm2'
 cask 'java'
 cask 'jetbrains-toolbox'
 cask 'keka'
@@ -67,7 +26,6 @@ cask 'mysqlworkbench'
 cask 'plex-media-player'
 cask 'private-internet-access'
 cask 'sequel-pro'
-cask 'shuttle'
 cask 'steam'
 cask 'tower'
 cask 'transmission'
@@ -78,26 +36,7 @@ cask 'teamviewer'
 cask 'openemu'
 cask 'transmission'
 cask 'imagealpha'
-cask 'cyberduck'
-
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlimagesize'
-cask 'qlmarkdown'
-cask 'qlprettypatch'
-cask 'qlstephen'
-cask 'qlvideo'
-cask 'quicklook-csv'
-cask 'quicklook-json'
-cask 'quicklookase'
-cask 'suspicious-package'
-cask 'webpquicklook'
-
-# Fonts
-cask 'font-fira-code'
-
 
 # Install Mac App Store apps
-mas 'Amphetamine', id: 937984704
 mas 'Pages', id: 409201541
 mas 'Xcode', id: 497799835

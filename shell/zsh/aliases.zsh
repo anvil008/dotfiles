@@ -135,6 +135,13 @@ alias ttop="top -R -F -s 10 -o rsize"
 # List processes owned by my user:
 my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 
-# 2017 Aliasses
 # Safer Removal by moving to bin (uses npm trash-cli)
 alias rm=trash
+
+
+
+
+
+##Python 3 pointing to Homebrew version
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3

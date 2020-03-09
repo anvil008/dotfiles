@@ -6,7 +6,7 @@ packages=(
 		gatsby-cli
 		git-open
 		git-recent
-		gulp-cli
+		gulp
 		http-server
 		nodemon
 		npm-check-updates
@@ -18,4 +18,4 @@ packages=(
 		yo
 )
 
-npm install -g "${packages[@]}"
+yarn global add "${packages[@]}"

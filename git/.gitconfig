@@ -131,6 +131,7 @@
 	untracked = cyan
 
 [commit]
+	template = /Users/anvil/.stCommitMsg
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
 	# gpgsign = true
@@ -206,6 +207,3 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-
-[commit]
-	template = ~/.gitmessage
