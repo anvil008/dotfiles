@@ -37,3 +37,5 @@ export BLOCKSIZE=1k
 
 #JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+export GPG_TTY=$(tty)
