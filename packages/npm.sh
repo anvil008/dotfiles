@@ -16,6 +16,7 @@ packages=(
 		trash-cli
 		xo
 		yo
+		ghost-cli
 )
 
-yarn global add "${packages[@]}"
+npm install -g "${packages[@]}"

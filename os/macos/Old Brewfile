@@ -27,7 +27,7 @@ brew 'hub'#https://hub.github.com
 brew 'lua'
 brew 'mas'
 brew 'mackup' # Backup App settings including dotfiles and others
-brew 'node'
+brew 'nvm'
 brew 'p7zip'
 brew 'pv'
 brew 'python'
@@ -41,9 +41,6 @@ brew 'vbindiff'
 brew 'wget'
 brew 'zopfli'
 brew 'speedtest'
-
-#Install Package Managers
-brew 'yarn'
 
 # Apps
 

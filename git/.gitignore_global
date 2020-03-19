@@ -32,7 +32,3 @@ ehthumbs_vista.db
 ehthumbs.db
 Thumbs.db
 
-# Dropbox settings and caches
-.dropbox
-.dropbox.attr
-.dropbox.cache

@@ -27,6 +27,9 @@ cd ..
 cd ..
 brew cleanup
 
+nvm install node
+brew install yarn
+
 # Make ZSH from homebrew the default shell environment
 echo "Setting ZSH from homebrew as the default shell"
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
