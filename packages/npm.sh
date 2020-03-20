@@ -4,6 +4,7 @@ packages=(
 		conduct
 		create-react-app
 		gatsby-cli
+		ghost-cli
 		git-open
 		git-recent
 		gulp
@@ -16,7 +17,6 @@ packages=(
 		trash-cli
 		xo
 		yo
-		ghost-cli
 )
 
 npm install -g "${packages[@]}"
