@@ -132,6 +132,7 @@
 
 [commit]
 	template = /Users/anvil/.stCommitMsg
+	gpgsign = true
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
 	# gpgsign = true
@@ -193,7 +194,7 @@
 [user]
 	name = Anvil Palamattam
 	email = anvil008@me.com
-	signingkey = 5893005B9942AD6C
+	signingkey = B0BB92738A242559A352C25B5893005B9942AD6C
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -208,3 +209,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
