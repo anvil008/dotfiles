@@ -10,7 +10,7 @@ xcode-select --install
 # Check for Homebrew and install if not installed
 echo "Checking for Homebrew and installing if not found"
 if test ! $(which brew); then
-	/usr/bin/ruby -e "$(curl sSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Update Homebrew recipes
@@ -27,7 +27,9 @@ cd ..
 cd ..
 brew cleanup
 
-nvm install node
+# Install Node package managers
+# Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
 brew install yarn
 
 # Make ZSH from homebrew the default shell environment
@@ -38,7 +40,7 @@ zsh --version
 
 # Install packages
 echo "Installing all global packages"
-source "$PWD/packages/yarn.sh"
+source "$PWD/packages/npm.sh"
 
 # Install oh-my-zsh
 echo "Installing oh-my-zsh"
@@ -47,6 +49,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # Symbolic link dotfiles to ~/
 echo "Symbolic linking dotfiles..."
 
+#############################NEED TO CHECK FROM HERE #################
 echo "Symbolic linking git"
 ln -sf "$PWD/git/.gitattributes" ~
 ln -sf "$PWD/git/.gitconfig" ~
@@ -65,16 +68,18 @@ ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-autosuggestions" ~/.oh-my-zsh/custom/plug
 ln -sf "$PWD/shell/zsh/zsh-plugins/zsh-syntax-highlighting" ~/.oh-my-zsh/custom/plugins
 
 echo "Symbolic linking extras"
+ln -sf "$PWD/shell/.alacritty.yml" ~
 ln -sf "$PWD/shell/.editorconfig" ~
 ln -sf "$PWD/shell/.hushlogin" ~
 ln -sf "$PWD/shell/.inputrc" ~
-ln -sf "$PWD/shell/.wgetrc" ~
 ln -sf "$PWD/shell/.prettierrc" ~
-ln -sf "$PWD/shell/.alacritty.yml" ~
+ln -sf "$PWD/shell/.screenrc" ~
+ln -sf "$PWD/shell/.wgetrc" ~
 
 echo "Copying private files"
 ln -sf ~/Documents/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/    	# Need to update to iCloud Drive
 ln sf ~/Documents/Dev\ Tools/.ssh ~/								# Need to update to iCloud Drive
+ln sf ~/Documents/Dev\ Tools/.gnupg ~/								# Need to update to iCloud Drive
 
 # Update macOS
 echo "Updating all Mac Store Apps"
@@ -83,10 +88,10 @@ echo "Updating all Brew Cask Apps"
 brew cu --all --cleanup --yes
 
 # Set macOS defaults
-echo "Setting up macOS defaults"
-source "$PWD/os/macos/macos.sh"
-echo "Applying app preferences"
-source "$PWD/os/macos/app-preferences.sh"
+# echo "Setting up macOS defaults"
+# source "$PWD/os/macos/macos.sh"
+# echo "Applying app preferences"
+# source "$PWD/os/macos/app-preferences.sh"
 
 echo "."
 echo ".."

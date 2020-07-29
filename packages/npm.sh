@@ -12,7 +12,6 @@ packages=(
 		nodemon
 		npm-check-updates
 		pure-prompt
-		speed-test
 		svgo
 		trash-cli
 		xo

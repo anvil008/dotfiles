@@ -1,12 +1,24 @@
 # Taps
 tap 'buo/cask-upgrade' #cask for upgrade-cli
 tap 'teamookla/speedtest'
+tap 'github/gh'
+tap 'adoptopenjdk/openjdk'
 
-# Install Shells
+# Speedtest
+brew 'speedtest'
+
+# Shells
 brew 'zsh'
 
-#Install Package Managers
-brew 'yarn'
+# Binaries
+brew 'awscli'
+brew 'gh'
+brew 'git'
+brew 'mas'
+brew 'nvm'
+brew 'python'
+cask 'adoptopenjdk8'
+cask 'adoptopenjdk13'
 
 # Apps
 cask 'alacritty'
@@ -22,20 +34,25 @@ cask 'imageoptim'
 cask 'java'
 cask 'jetbrains-toolbox'
 cask 'keka'
-cask 'mysqlworkbench'
 cask 'plex-media-player'
-cask 'private-internet-access'
-cask 'sequel-pro'
 cask 'steam'
 cask 'tower'
 cask 'transmission'
 cask 'transmit'
 cask 'whatsapp'
 cask 'visual-studio-code'
-cask 'teamviewer'
 cask 'openemu'
 cask 'transmission'
 cask 'imagealpha'
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlimagesize'
+cask 'qlmarkdown'
+cask 'qlstephen'
+cask 'qlvideo'
+cask 'quicklookase'
+cask 'suspicious-package'
 
 # Install Mac App Store apps
 mas 'Pages', id: 409201541

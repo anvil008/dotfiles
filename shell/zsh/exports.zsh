@@ -36,6 +36,10 @@ export MANPAGER='less -X';
 export BLOCKSIZE=1k
 
 #JAVA_HOME
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME_8=$(/usr/libexec/java_home -v1.8)
+export JAVA_HOME_14=$(/usr/libexec/java_home -v14)
 
+export JAVA_HOME=$JAVA_HOME_8
+
+#GPG
 export GPG_TTY=$(tty)

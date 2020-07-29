@@ -134,9 +134,6 @@
 	template = /Users/anvil/.stCommitMsg
 	gpgsign = true
 
-	# https://help.github.com/articles/signing-commits-using-gpg/
-	# gpgsign = true
-
 [diff]
 
 	# Detect copies as well as renames
