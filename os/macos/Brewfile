@@ -15,10 +15,11 @@ brew 'awscli'
 brew 'gh'
 brew 'git'
 brew 'mas'
-brew 'nvm'
+brew 'n'
 brew 'python'
 cask 'adoptopenjdk8'
 cask 'adoptopenjdk13'
+cask 'java'
 
 # Apps
 cask 'alacritty'
@@ -31,7 +32,6 @@ cask 'google-chrome'
 cask 'hyper'
 cask 'iina'
 cask 'imageoptim'
-cask 'java'
 cask 'jetbrains-toolbox'
 cask 'keka'
 cask 'plex-media-player'
@@ -44,16 +44,3 @@ cask 'visual-studio-code'
 cask 'openemu'
 cask 'transmission'
 cask 'imagealpha'
-
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlimagesize'
-cask 'qlmarkdown'
-cask 'qlstephen'
-cask 'qlvideo'
-cask 'quicklookase'
-cask 'suspicious-package'
-
-# Install Mac App Store apps
-mas 'Pages', id: 409201541
-mas 'Xcode', id: 497799835

@@ -5,7 +5,6 @@ echo "Setting up $USER's Mac..."
 # Update macOS and install Xcode Command Line Tools
 echo "Updating macOS"
 sudo softwareupdate -lia
-xcode-select --install
 
 # Check for Homebrew and install if not installed
 echo "Checking for Homebrew and installing if not found"
@@ -27,10 +26,11 @@ cd ..
 cd ..
 brew cleanup
 
-# Install Node package managers
-# Install NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
-brew install yarn
+# Install Node and Yarn
+echo "Installing Node through n package manager and Yarn"
+sudo n latest
+sudo chown -R $USER /usr/local/lib/node_modules
+npm install --global yarn
 
 # Make ZSH from homebrew the default shell environment
 echo "Setting ZSH from homebrew as the default shell"
@@ -48,8 +48,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Symbolic link dotfiles to ~/
 echo "Symbolic linking dotfiles..."
-
-#############################NEED TO CHECK FROM HERE #################
 echo "Symbolic linking git"
 ln -sf "$PWD/git/.gitattributes" ~
 ln -sf "$PWD/git/.gitconfig" ~
