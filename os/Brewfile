@@ -19,7 +19,6 @@ brew 'n'
 brew 'python'
 cask 'adoptopenjdk8'
 cask 'adoptopenjdk13'
-cask 'java'
 
 # Apps
 cask 'alacritty'

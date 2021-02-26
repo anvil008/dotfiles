@@ -20,7 +20,7 @@ brew upgrade
 # Install all dependencies with bundle (See Brewfile)
 echo "Installing Homebrew bundle"
 brew tap homebrew/bundle
-cd os/macos
+cd os
 brew bundle
 cd ..
 cd ..

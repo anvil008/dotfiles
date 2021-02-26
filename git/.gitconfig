@@ -191,7 +191,6 @@
 [user]
 	name = Anvil Palamattam
 	email = anvil008@me.com
-	signingkey = B0BB92738A242559A352C25B5893005B9942AD6C
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

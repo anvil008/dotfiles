@@ -17,6 +17,9 @@ alias h="history"
 alias j="jobs"
 alias c="clear"
 
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update -g; brew cu --all --force --no-quarantine --cleanup --yes'
+
 # List all files colorized in long format and human readable file size
 alias l="ls -lFh ${colorflag}"
 
@@ -43,9 +46,6 @@ alias week='date +%V'
 
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
-
-# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update -g; brew cu --all --cleanup --yes'
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
