@@ -1,11 +1,7 @@
 #!/bin/sh
 
-packages=(
-		pure-prompt
-		create-react-app
-		gatsby-cli
-		ghost-cli
-		gulp
-)
-
-npm install -g "${packages[@]}"
+npm install -g pure-prompt
+npm install -g create-react-app
+npm install -g gatsby-cli
+npm install -g ghost-cli
+npm install -g gulp

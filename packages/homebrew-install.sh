@@ -10,7 +10,7 @@ brew tap homebrew/cask-versions
 brew install zsh
 
 #Binaries
-brew install speedtest
+brew install speedtest-cli
 brew install git
 brew install gh
 brew install mas
@@ -24,6 +24,7 @@ brew install adoptopenjdk
 brew install adoptopenjdk8
 
 #Casks
+brew install gpg-suite-no-mail --no-quarantine
 brew install alacritty --no-quarantine
 brew install adobe-creative-cloud --no-quarantine
 brew install docker --cask --no-quarantine
@@ -50,7 +51,7 @@ mas install 409183694
 #Magnet
 mas install 441258766
 #Excel
-mas install 62058435
+mas install 462058435
 #Powerpoint
 mas install 462062816
 #RDP
@@ -63,3 +64,5 @@ mas install 409203825
 mas install 409201541
 #XCode
 mas install 497799835
+
+brew cleanup

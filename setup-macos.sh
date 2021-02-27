@@ -2,14 +2,18 @@
 
 echo "Setting up $USER's Mac..."
 
+# Ask for the administrator password upfront
+sudo -v
+
 # Update macOS and install Xcode Command Line Tools
 echo "Updating macOS"
 sudo softwareupdate -lia
+xcode-select --install
 
 # Check for Homebrew and install if not installed
 echo "Checking for Homebrew and installing if not found"
 if test ! $(which brew); then
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Update Homebrew recipes
@@ -17,29 +21,28 @@ echo "Updating and upgrading Brew"
 brew update
 brew upgrade
 
-# Install all dependencies with bundle (See Brewfile)
-echo "Installing Homebrew bundle"
-brew tap homebrew/bundle
-cd os
-brew bundle
-cd ..
-cd ..
-brew cleanup
+# Install all Homebrew packages
+echo "Installing Homebrew packages"
+source "$PWD/packages/homebrew-install.sh"
 
-# Install Node and Yarn
-echo "Installing Node through n package manager and Yarn"
-sudo n latest
-sudo chown -R $USER /usr/local/lib/node_modules
-npm install --global yarn
-
-# Make ZSH from homebrew the default shell environment
+#Make ZSH from homebrew the default shell environment
 echo "Setting ZSH from homebrew as the default shell"
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 which zsh
 zsh --version
 
+# Install Node and Yarn through NVM
+echo "Installing Node through nvm package manager and Yarn"
+mkdir ~/.nvm
+## Install latest node version from nvm
+nvm install node
+## Install yarn globally
+npm install --global yarn
+
+
+
 # Install packages
-echo "Installing all global packages"
+echo "Installing npm packages"
 source "$PWD/packages/npm.sh"
 
 # Install oh-my-zsh
@@ -75,21 +78,26 @@ ln -sf "$PWD/shell/.screenrc" ~
 ln -sf "$PWD/shell/.wgetrc" ~
 
 echo "Copying private files"
-ln -sf ~/Documents/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/    	# Need to update to iCloud Drive
-ln sf ~/Documents/Dev\ Tools/.ssh ~/								# Need to update to iCloud Drive
-ln sf ~/Documents/Dev\ Tools/.gnupg ~/								# Need to update to iCloud Drive
+ln -sf ~/Google\ Drive/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/    	# Need to update to iCloud Drive
+ln -sf ~/Google\ Drive/Dev\ Tools/.ssh ~/								# Need to update to iCloud Drive
+ln -sf ~/Google\ Drive/Dev\ Tools/.gnupg ~/								# Need to update to iCloud Drive
+ln -sf ~/Google\ Drive/Dev\ Tools/.aws ~/								# Need to update to iCloud Drive
 
 # Update macOS
 echo "Updating all Mac Store Apps"
 mas upgrade
 echo "Updating all Brew Cask Apps"
-brew cu --all --cleanup --yes
+brew cu --all --force --no-quarantine --cleanup --yes
 
 # Set macOS defaults
 # echo "Setting up macOS defaults"
 # source "$PWD/os/macos/macos.sh"
 # echo "Applying app preferences"
 # source "$PWD/os/macos/app-preferences.sh"
+
+#Add SSH key to ssh agent
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/id_ed25519
 
 echo "."
 echo ".."
