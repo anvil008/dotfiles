@@ -41,6 +41,12 @@ brew install hyper --no-quarantine
 brew install microsoft-teams --no-quarantine
 brew install zoom --no-quarantine
 brew install visual-studio --no-quarantine
+brew install notion --no-quarantine
+brew install amazon-workspaces --no-quarantine
+brew install amazon-chime --no-quarantine
+brew install onedrive --no-quarantine
+
+
 
 #Mas
 

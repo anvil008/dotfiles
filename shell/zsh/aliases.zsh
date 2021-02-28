@@ -11,7 +11,7 @@ alias -- -="cd -"
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
+alias p="cd ~/Documents/Github"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -155,10 +155,6 @@ my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 
 # Safer Removal by moving to bin (uses npm trash-cli)
 alias rm=trash
-
-
-
-
 
 ##Python 3 pointing to Homebrew version
 alias python=/usr/local/bin/python3

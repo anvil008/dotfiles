@@ -39,8 +39,6 @@ nvm install node
 ## Install yarn globally
 npm install --global yarn
 
-
-
 # Install packages
 echo "Installing npm packages"
 source "$PWD/packages/npm.sh"
@@ -90,8 +88,8 @@ echo "Updating all Brew Cask Apps"
 brew cu --all --force --no-quarantine --cleanup --yes
 
 # Set macOS defaults
-# echo "Setting up macOS defaults"
-# source "$PWD/os/macos/macos.sh"
+echo "Setting up macOS defaults"
+source "$PWD/os/macos/macos.sh"
 # echo "Applying app preferences"
 # source "$PWD/os/macos/app-preferences.sh"
 
