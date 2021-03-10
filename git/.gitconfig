@@ -104,6 +104,7 @@
 	precomposeunicode = false
 
 	filemode = false
+	editor = code --wait
 
 [color]
 
