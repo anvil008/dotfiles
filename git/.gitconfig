@@ -132,7 +132,7 @@
 	untracked = cyan
 
 [commit]
-	template = /Users/anvil/.stCommitMsg
+
 	gpgsign = true
 
 [diff]
