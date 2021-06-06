@@ -53,4 +53,3 @@ cask "transmit"
 cask "visual-studio"
 cask "visual-studio-code"
 cask "whatsapp"
-mas "F5Access", id: 1243219105
