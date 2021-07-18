@@ -1,6 +1,7 @@
 #!/bin/sh
 
 #Taps
+brew tap aws/tap
 brew tap github/gh
 brew tap buo/cask-upgrade
 brew tap adoptopenjdk/openjdk
@@ -15,6 +16,7 @@ brew install git
 brew install gh
 brew install mas
 brew install awscli
+brew install aws-sam-cli
 brew install python
 brew install nvm
 brew install nano

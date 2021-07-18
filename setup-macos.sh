@@ -7,7 +7,7 @@ sudo -v
 
 # Update macOS and install Xcode Command Line Tools
 echo "Updating macOS"
-sudo softwareupdate -lia
+softwareupdate -lia
 xcode-select --install
 
 # Check for Homebrew and install if not installed
@@ -89,9 +89,9 @@ brew cu --all --force --no-quarantine --cleanup --yes
 
 # Set macOS defaults
 echo "Setting up macOS defaults"
-source "$PWD/os/macos/macos.sh"
-# echo "Applying app preferences"
-# source "$PWD/os/macos/app-preferences.sh"
+source "$PWD/os/macos.sh"
+echo "Applying app preferences"
+source "$PWD/os/app-preferences.sh"
 
 #Add SSH key to ssh agent
 eval "$(ssh-agent -s)"
