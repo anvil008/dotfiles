@@ -24,6 +24,7 @@ brew upgrade
 # Install all Homebrew packages
 echo "Installing Homebrew packages"
 source "$PWD/packages/homebrew-install.sh"
+brew cleanup
 
 #Make ZSH from homebrew the default shell environment
 echo "Setting ZSH from homebrew as the default shell"

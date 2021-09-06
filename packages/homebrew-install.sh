@@ -72,5 +72,3 @@ mas install 409203825
 mas install 409201541
 #XCode
 mas install 497799835
-
-brew cleanup
