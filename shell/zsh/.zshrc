@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+fpath+=$HOME/.zsh/pure
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Anvil/.oh-my-zsh
@@ -95,5 +96,6 @@ setopt HIST_IGNORE_DUPS     # Do not save duplicate commands
 setopt EXTENDED_HISTORY     # Add timestamp to history
 
 #Pure Theme
+
 autoload -U promptinit; promptinit
 prompt pure

@@ -11,7 +11,7 @@ alias -- -="cd -"
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Github"
+alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
