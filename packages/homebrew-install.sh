@@ -22,6 +22,7 @@ brew install python
 brew install nvm
 brew install nano
 brew install speedtest-cli
+brew install trash
 
 #Kubernetes
 brew install kubectl
@@ -33,7 +34,7 @@ brew install adoptopenjdk8
 
 #Casks
 brew install google-drive --no-quarantine
-brew install gpg-suite-no-mail --no-quarantine
+brew install gpg-suite --no-quarantine
 brew install alacritty --no-quarantine
 brew install docker --cask --no-quarantine
 brew install google-chrome --no-quarantine

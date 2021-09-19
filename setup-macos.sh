@@ -42,9 +42,8 @@ mkdir -p "$HOME/.zsh"
 git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 
 # Install Node and Yarn through NVM
-echo "Installing Node through nvm package manager and Yarn"
+echo "Installing Node through nvm and node"
 mkdir ~/.nvm
-## Install latest node version from nvm
 nvm install node
 
 # Install packages
@@ -62,8 +61,10 @@ echo "Symbolic linking dotfiles..."
 echo "Symbolic linking git"
 ln -sf "$PWD/git/.gitconfig" ~
 
-echo "Symbolic linking hyper terminal"
+#Symbolic link terminal settings
+echo "Symbolic linking terminal settings"
 ln -sf "$PWD/hyper/.hyper.js" ~
+ln -sf "$PWD/shell/.alacritty.yml" ~
 
 echo "Symbolic linking zsh files"
 ln -sf "$PWD/shell/zsh/.zshrc" ~
@@ -72,20 +73,10 @@ ln -sf "$PWD/shell/zsh/exports.zsh" ~/.oh-my-zsh/custom/
 ln -sf "$PWD/shell/zsh/functions.zsh" ~/.oh-my-zsh/custom/
 ln -sf "$PWD/shell/zsh/path.zsh" ~/.oh-my-zsh/custom/
 
-echo "Symbolic linking extras"
-ln -sf "$PWD/shell/.alacritty.yml" ~
-
 echo "Copying private files"
-ln -sf /Volumes/GoogleDrive/My\ Drive/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/    	# Need to update to iCloud Drive
-ln -sf /Volumes/GoogleDrive/My\ Drive/Dev\ Tools/.ssh ~/								# Need to update to iCloud Drive
-ln -sf /Volumes/GoogleDrive/My\ Drive/Dev\ Tools/.gnupg ~/								# Need to update to iCloud Drive
-ln -sf /Volumes/GoogleDrive/My\ Drive/Dev\ Tools/.aws ~/								# Need to update to iCloud Drive
-
-# Update macOS
-echo "Updating all Mac Store Apps"
-mas upgrade
-echo "Updating all Brew Cask Apps"
-brew cu --all --force --no-quarantine --cleanup --yes
+ln -sf /Volumes/GoogleDrive/My\ Drive/Dev\ Tools/private.zsh ~/.oh-my-zsh/custom/
+ln -sf /Volumes/GoogleDrive/My\ Drive/Dev\ Tools/.ssh ~/
+ln -sf /Volumes/GoogleDrive/My\ Drive/Dev\ Tools/.aws ~/
 
 # Set macOS defaults
 # echo "Setting up macOS defaults"
