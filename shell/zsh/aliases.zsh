@@ -157,5 +157,5 @@ my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 alias rm=trash
 
 ##Python 3 pointing to Homebrew version
-alias python=/usr/local/bin/python3
-alias pip=/usr/local/bin/pip3
+alias python=/opt/homebrew/bin/python3
+alias pip=/opt/homebrew/bin/pip3
