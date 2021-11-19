@@ -60,6 +60,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 echo "Symbolic linking dotfiles..."
 echo "Symbolic linking git"
 ln -sf "$PWD/git/.gitconfig" ~
+ln -sf "$PWD/git/.gitignore_global" ~
 
 #Symbolic link terminal settings
 echo "Symbolic linking terminal settings"
